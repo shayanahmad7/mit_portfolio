@@ -1,217 +1,118 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowLeft, Download, ExternalLink, Mail, Linkedin, Github, MapPin, Phone, GraduationCap, Briefcase, Award, Code, Users, BookOpen } from 'lucide-react';
+import { ArrowLeft, Download, ExternalLink, Mail, Linkedin, Github } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 
 export default function Resume() {
-  const education = [
-    {
-      institution: "New York University Abu Dhabi",
-      degree: "Bachelor of Science in Computer Science and Mathematics",
-      period: "Aug 2021 - May 2025",
-      location: "UAE & New York, USA"
-    }
-  ];
-
-  const honors = [
-    "International Math Competition 2024: Honorable Mention (32 points, 33 for Bronze)",
-    "International Math Olympiad 2021: Pakistan National Team (one of 6 selected)",
-    "President, NYUAD Mathematics Society (2022-23)"
-  ];
-
-  const research = [
-    {
-      title: "Tamayyuz Research Fellow, AI in Education",
-      org: "Hilary Ballon Center for Teaching and Learning, NYUAD",
-      period: "Sept 2025 - Present",
-      points: [
-        "Leading mixed-methods research on flipped classrooms with AI-powered tutoring systems",
-        "Designing adaptive learning interventions using custom-built AI tools for 50+ students",
-        "Training instructors on AI integration and syllabus redesign"
-      ]
-    },
-    {
-      title: "AI in Education Research Assistant",
-      org: "Math Department, NYU Abu Dhabi",
-      period: "Sept 2024 - Aug 2025",
-      points: [
-        "Co-designed AI-enhanced flipped classroom for Precalculus with 32 modular AI tutors",
-        "Built tutors on NYUAD's secure infrastructure using open-source LLMs via OpenWebUI",
-        "Co-authoring research paper for IJETHE"
-      ]
-    },
-    {
-      title: "Senior Capstone: AI for Computer Networking",
-      org: "NYU Abu Dhabi",
-      period: "Apr 2024 - May 2025",
-      points: [
-        "Collaborated with Professors Jim Kurose and Keith Ross on AI tutors for their textbook",
-        "Deployed to 100,000+ students monthly on authors' website",
-        "Developed AI bots for each chapter and interactive problem-solver"
-      ]
-    },
-    {
-      title: "AI Research Assistant",
-      org: "NYU Tandon Summer Research Program",
-      period: "Jun 2024 - Aug 2024",
-      points: [
-        "Built AI chatbot on Discord for 200+ EG 1004 students",
-        "Processed 10,000+ messages for training; preparing IEEE/ASEE submissions"
-      ]
-    }
-  ];
-
-  const projects = [
-    {
-      name: "AI-LMS - Agentic Learning Management System",
-      link: "https://ai-lms-jet.vercel.app/",
-      description: "AI-orchestrated LMS with autonomous agent tracking mastery, modular tutors, and teacher dashboards"
-    },
-    {
-      name: "Math-Confidence.com - Interactive AI Textbook",
-      link: "https://math-confidence.com",
-      description: "NYUAD+Nokia Hackathon Finalist. 70+ section-specific AI mini-tutors for mastery learning"
-    },
-    {
-      name: "DrawExplain.com - AI Math Learning Platform",
-      link: "https://drawexplain.com",
-      description: "Canvas + verbal explanation with GPT-4o feedback for conceptual understanding"
-    }
-  ];
-
-  const teaching = [
-    {
-      title: "Teaching Assistant",
-      org: "NYU Wagner: 'What Really Matters: Leadership with no Regrets'",
-      period: "Aug - Dec 2024"
-    },
-    {
-      title: "Mathematics Peer Tutor",
-      org: "NYU Tandon TRIO Scholars Program",
-      period: "Aug - Dec 2024"
-    },
-    {
-      title: "Mathematics Tutor (200+ sessions)",
-      org: "LessonPal, Valdo Academics, Russian Math Tutors",
-      period: "Oct 2022 - Present"
-    },
-    {
-      title: "Mathematics Teacher (Grades 4-8)",
-      org: "Alma Mater School, Lahore",
-      period: "Jun - Nov 2020"
-    }
-  ];
-
-  const volunteer = [
-    {
-      title: "Co-Founder",
-      org: "Izteraab.org",
-      description: "Non-profit bringing AI-powered education to underserved schools in Pakistan"
-    },
-    {
-      title: "Founding Tutor & Project Manager",
-      org: "Schoolhouse.world (by Sal Khan)",
-      description: "First 20 tutors; tutored 100+ students globally; initiated migrant education pilot"
-    }
-  ];
-
-  const skills = {
-    "AI/ML": "LLMs, RAG, MCP, LangChain, PyTorch, TensorFlow",
-    "Web": "Next.js, React, Node.js, Express, Tailwind CSS",
-    "Database/Cloud": "MongoDB, MySQL, GCP, Docker",
-    "Languages": "JavaScript/TypeScript, Python, C/C++"
-  };
-
   return (
-    <div className="min-h-screen bg-[#FAFAF5]">
+    <div className="min-h-screen bg-[#0a0a0a] text-white">
       {/* Header */}
-      <div className="bg-white border-b border-[#0D1B2A]/5 sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <div className="bg-black border-b-2 border-white/10 sticky top-0 z-40 backdrop-blur-sm bg-black/90">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link 
             to={createPageUrl("Home")}
-            className="inline-flex items-center gap-2 text-[#0D1B2A]/60 hover:text-[#0D1B2A] transition-colors"
+            className="inline-flex items-center gap-2 text-white/60 hover:text-[#FF6B35] transition-colors font-mono text-sm"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Home
+            BACK_TO_HOME
           </Link>
           <a 
             href="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_68ece077245b833bff0195c7/e69a5a7a1_shayan_resume_2025.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-4 py-2 bg-[#0D1B2A] text-white rounded-full hover:bg-[#0D1B2A]/90 transition-all text-sm"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-[#FF6B35] text-black font-bold hover:bg-white transition-all"
           >
             <Download className="w-4 h-4" />
-            Download PDF
+            DOWNLOAD_PDF
           </a>
         </div>
       </div>
 
       {/* Resume Content */}
-      <div className="max-w-4xl mx-auto px-6 py-12">
+      <div className="max-w-5xl mx-auto px-6 py-16">
         {/* Header */}
         <motion.div 
-          className="text-center mb-12"
+          className="mb-16 pb-8 border-b-2 border-white/10"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h1 className="text-4xl md:text-5xl font-light text-[#0D1B2A] mb-4">Shayan Ahmad</h1>
-          <div className="flex items-center justify-center gap-4 flex-wrap text-[#0D1B2A]/60 text-sm">
-            <a href="mailto:sa6097@nyu.edu" className="flex items-center gap-1 hover:text-[#E07A5F] transition-colors">
+          <h1 className="text-5xl md:text-6xl font-black mb-6">SHAYAN AHMAD</h1>
+          <div className="flex flex-wrap items-center gap-6 font-mono text-sm text-white/60">
+            <a href="mailto:sa6097@nyu.edu" className="hover:text-[#FF6B35] transition-colors flex items-center gap-2">
               <Mail className="w-4 h-4" /> sa6097@nyu.edu
             </a>
-            <a href="https://linkedin.com/in/shayanahmad7" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-[#E07A5F] transition-colors">
-              <Linkedin className="w-4 h-4" /> LinkedIn
+            <a href="https://linkedin.com/in/shayanahmad7" target="_blank" rel="noopener noreferrer" className="hover:text-[#4ECDC4] transition-colors flex items-center gap-2">
+              <Linkedin className="w-4 h-4" /> /shayanahmad7
             </a>
-            <a href="https://github.com/shayanahmad7" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 hover:text-[#E07A5F] transition-colors">
-              <Github className="w-4 h-4" /> GitHub
+            <a href="https://github.com/shayanahmad7" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFB800] transition-colors flex items-center gap-2">
+              <Github className="w-4 h-4" /> /shayanahmad7
             </a>
           </div>
         </motion.div>
 
         {/* Education */}
-        <Section title="Education" icon={GraduationCap}>
-          {education.map((edu, i) => (
-            <div key={i} className="mb-4">
-              <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-1">
-                <h3 className="font-medium text-[#0D1B2A]">{edu.institution}</h3>
-                <span className="text-sm text-[#0D1B2A]/50">{edu.period}</span>
-              </div>
-              <p className="text-[#0D1B2A]/70">{edu.degree}</p>
+        <Section title="EDUCATION" color="#4ECDC4">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+            <div>
+              <h3 className="text-xl font-black text-white">New York University Abu Dhabi</h3>
+              <p className="text-white/70">Bachelor of Science in Computer Science and Mathematics</p>
             </div>
-          ))}
+            <div className="text-white/50 font-mono text-sm mt-2 md:mt-0">Aug 2021 - May 2025</div>
+          </div>
         </Section>
 
         {/* Honors */}
-        <Section title="Honors & Leadership" icon={Award}>
-          <ul className="space-y-2">
-            {honors.map((honor, i) => (
-              <li key={i} className="text-[#0D1B2A]/70 flex items-start gap-2">
-                <span className="text-[#E07A5F] mt-1">•</span>
-                {honor}
-              </li>
-            ))}
+        <Section title="HONORS_&_LEADERSHIP" color="#FFB800">
+          <ul className="space-y-3">
+            <li className="text-white/80">
+              <span className="text-[#FFB800]">▪</span> International Math Competition 2024: Honorable Mention (32 points, 33 for Bronze)
+            </li>
+            <li className="text-white/80">
+              <span className="text-[#FFB800]">▪</span> International Math Olympiad 2021: Pakistan National Team (one of 6 selected)
+            </li>
+            <li className="text-white/80">
+              <span className="text-[#FFB800]">▪</span> President, NYUAD Mathematics Society (2022-23)
+            </li>
           </ul>
         </Section>
 
         {/* Research */}
-        <Section title="AI in Education Research" icon={Briefcase}>
+        <Section title="AI_IN_EDUCATION_RESEARCH" color="#FF6B35">
           <div className="space-y-6">
-            {research.map((item, i) => (
+            {[
+              {
+                title: "Tamayyuz Research Fellow, AI in Education",
+                org: "HBCTL, NYUAD",
+                period: "Sept 2025 - Present",
+                points: ["Leading mixed-methods research on flipped classrooms", "Designing adaptive learning interventions for 50+ students", "Training instructors on AI integration"]
+              },
+              {
+                title: "AI in Education Research Assistant",
+                org: "Math Dept, NYUAD",
+                period: "Sept 2024 - Aug 2025",
+                points: ["Built 32 modular AI tutors using OpenWebUI", "Co-authoring research paper for IJETHE"]
+              },
+              {
+                title: "Senior Capstone: AI Educational Assistant",
+                org: "NYUAD",
+                period: "Apr 2024 - May 2025",
+                points: ["Deployed to 100,000+ monthly users", "Worked with Professors Jim Kurose and Keith Ross"]
+              }
+            ].map((item, i) => (
               <div key={i}>
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-2">
                   <div>
-                    <h3 className="font-medium text-[#0D1B2A]">{item.title}</h3>
-                    <p className="text-sm text-[#E07A5F]">{item.org}</p>
+                    <h4 className="font-black text-white">{item.title}</h4>
+                    <p className="text-[#FF6B35] text-sm font-mono">{item.org}</p>
                   </div>
-                  <span className="text-sm text-[#0D1B2A]/50 flex-shrink-0">{item.period}</span>
+                  <span className="text-white/50 font-mono text-xs">{item.period}</span>
                 </div>
-                <ul className="space-y-1">
+                <ul className="space-y-1 ml-4">
                   {item.points.map((point, j) => (
-                    <li key={j} className="text-sm text-[#0D1B2A]/60 flex items-start gap-2">
-                      <span className="text-[#0D1B2A]/30 mt-1">•</span>
-                      {point}
+                    <li key={j} className="text-white/60 text-sm">
+                      <span className="text-white/30">•</span> {point}
                     </li>
                   ))}
                 </ul>
@@ -221,64 +122,69 @@ export default function Resume() {
         </Section>
 
         {/* Projects */}
-        <Section title="Technical Projects" icon={Code}>
+        <Section title="TECHNICAL_PROJECTS" color="#4ECDC4">
           <div className="space-y-4">
-            {projects.map((project, i) => (
-              <div key={i} className="flex items-start gap-4">
-                <div className="flex-1">
-                  <a 
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-medium text-[#0D1B2A] hover:text-[#E07A5F] transition-colors inline-flex items-center gap-1"
-                  >
-                    {project.name}
-                    <ExternalLink className="w-3 h-3" />
-                  </a>
-                  <p className="text-sm text-[#0D1B2A]/60">{project.description}</p>
-                </div>
-              </div>
+            {[
+              { name: "AI-LMS", desc: "Agentic LMS with autonomous agent + modular tutors", link: "https://ai-lms-jet.vercel.app/" },
+              { name: "Math-Confidence.com", desc: "NYUAD+Nokia Hackathon Finalist. 70+ AI mini-tutors", link: "https://math-confidence.com" },
+              { name: "DrawExplain.com", desc: "Canvas + verbal explanation + GPT-4o feedback", link: "https://drawexplain.com" }
+            ].map((project, i) => (
+              <a 
+                key={i}
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block group hover:translate-x-2 transition-transform"
+              >
+                <span className="font-black text-white group-hover:text-[#4ECDC4] transition-colors">{project.name}</span>
+                <span className="text-white/40"> — </span>
+                <span className="text-white/70 text-sm">{project.desc}</span>
+                <ExternalLink className="inline-block ml-2 w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
+              </a>
             ))}
           </div>
         </Section>
 
         {/* Teaching */}
-        <Section title="Teaching Experience" icon={BookOpen}>
+        <Section title="TEACHING_EXPERIENCE" color="#FFB800">
           <div className="space-y-3">
-            {teaching.map((item, i) => (
-              <div key={i} className="flex flex-col md:flex-row md:items-center md:justify-between">
-                <div>
-                  <span className="font-medium text-[#0D1B2A]">{item.title}</span>
-                  <span className="text-[#0D1B2A]/50"> — </span>
-                  <span className="text-[#0D1B2A]/70 text-sm">{item.org}</span>
-                </div>
-                <span className="text-sm text-[#0D1B2A]/50">{item.period}</span>
+            {[
+              { title: "TA, NYU Wagner: 'What Really Matters'", period: "Aug - Dec 2024" },
+              { title: "Math Peer Tutor, NYU Tandon TRIO", period: "Aug - Dec 2024" },
+              { title: "Math Tutor, LessonPal + Others (200+ sessions)", period: "Oct 2022 - Present" },
+              { title: "Math Teacher, Alma Mater School (Grades 4-8)", period: "Jun - Nov 2020" }
+            ].map((item, i) => (
+              <div key={i} className="flex flex-col md:flex-row md:items-center md:justify-between text-sm">
+                <span className="text-white/80">{item.title}</span>
+                <span className="text-white/50 font-mono text-xs">{item.period}</span>
               </div>
             ))}
           </div>
         </Section>
 
         {/* Volunteer */}
-        <Section title="Volunteer & Community" icon={Users}>
+        <Section title="VOLUNTEER_&_COMMUNITY" color="#FF6B35">
           <div className="space-y-4">
-            {volunteer.map((item, i) => (
+            {[
+              { org: "Izteraab.org", role: "Co-Founder", desc: "Bringing AI-powered education to Pakistan" },
+              { org: "Schoolhouse.world", role: "Founding Tutor", desc: "First 20 tutors; 100+ students tutored globally" },
+              { org: "PrepLion", role: "Founder", desc: "YouTube/Instagram tutoring business, 100+ students" }
+            ].map((item, i) => (
               <div key={i}>
-                <h3 className="font-medium text-[#0D1B2A]">{item.title} — <span className="text-[#E07A5F]">{item.org}</span></h3>
-                <p className="text-sm text-[#0D1B2A]/60">{item.description}</p>
+                <h4 className="font-black text-white">{item.org} <span className="text-[#FF6B35]">— {item.role}</span></h4>
+                <p className="text-white/60 text-sm">{item.desc}</p>
               </div>
             ))}
           </div>
         </Section>
 
         {/* Skills */}
-        <Section title="Technical Skills" icon={Code}>
-          <div className="grid md:grid-cols-2 gap-4">
-            {Object.entries(skills).map(([category, skillList], i) => (
-              <div key={i}>
-                <span className="font-medium text-[#0D1B2A] text-sm">{category}:</span>
-                <span className="text-[#0D1B2A]/60 text-sm ml-2">{skillList}</span>
-              </div>
-            ))}
+        <Section title="TECHNICAL_SKILLS" color="#4ECDC4">
+          <div className="grid md:grid-cols-2 gap-4 font-mono text-sm">
+            <div><span className="text-[#4ECDC4]">AI/ML:</span> <span className="text-white/70">LLMs, RAG, LangChain, PyTorch</span></div>
+            <div><span className="text-[#FFB800]">Web:</span> <span className="text-white/70">Next.js, React, Node.js, Express</span></div>
+            <div><span className="text-[#FF6B35]">Database:</span> <span className="text-white/70">MongoDB, MySQL, GCP</span></div>
+            <div><span className="text-[#10B981]">Languages:</span> <span className="text-white/70">JS/TS, Python, C/C++</span></div>
           </div>
         </Section>
       </div>
@@ -286,18 +192,21 @@ export default function Resume() {
   );
 }
 
-function Section({ title, icon: Icon, children }) {
+function Section({ title, color, children }) {
   return (
     <motion.div 
-      className="mb-10"
+      className="mb-12"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
     >
-      <div className="flex items-center gap-3 mb-4 pb-2 border-b border-[#0D1B2A]/10">
-        <Icon className="w-5 h-5 text-[#E07A5F]" />
-        <h2 className="text-lg font-medium text-[#0D1B2A] uppercase tracking-wider">{title}</h2>
+      <div className="flex items-center gap-4 mb-6">
+        <div className="w-2 h-2" style={{ backgroundColor: color }} />
+        <h2 className="text-lg font-black uppercase tracking-wider" style={{ color }}>
+          {title}
+        </h2>
+        <div className="flex-1 h-px bg-white/10" />
       </div>
       {children}
     </motion.div>

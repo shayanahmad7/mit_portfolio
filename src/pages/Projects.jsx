@@ -9,221 +9,499 @@ export default function Projects() {
 
   const tabs = [
     { id: 'research', label: 'RESEARCH' },
-    { id: 'technical', label: 'TECHNICAL PROJECTS' },
+    { id: 'technical', label: 'TECHNICAL' },
     { id: 'teaching', label: 'TEACHING' },
-    { id: 'honors', label: 'HONORS & LEADERSHIP' },
-    { id: 'volunteer', label: 'VOLUNTEER & COMMUNITY' }
+    { id: 'honors', label: 'HONORS' },
+    { id: 'volunteer', label: 'VOLUNTEER' }
   ];
 
   const research = [
     {
-      title: "AI-Enhanced Flipped Classrooms",
-      role: "Tamayyuz Research Fellow",
+      title: "Tamayyuz Research Fellow",
       org: "Hilary Ballon Center for Teaching & Learning, NYUAD",
       period: "Sept 2025 - Present",
-      description: "Leading a mixed-methods research study on flipped classrooms with AI-powered tutoring systems in collaboration with Professor Dania Zantout, aiming to enhance conceptual understanding and retention in Precalculus.",
+      description: "Leading mixed-methods research on AI-enhanced flipped classrooms in Precalculus, analyzing outcomes across 50+ students.",
+      tags: ["AI in Education", "Mixed Methods", "Flipped Classrooms"],
       highlights: [
-        "Designing and evaluating adaptive learning interventions using custom-built AI tools",
-        "Analyzing outcomes across 50+ students in redesigned course sections",
-        "Training instructors on AI integration, syllabus redesign, and assessment adaptation",
-        "Managing team of student assistants for education research and social media"
-      ],
-      color: "#4F46E5"
+        "Co-designed and piloted AI tutoring system with 32 modular tutors",
+        "Training faculty on AI integration and assessment redesign",
+        "Co-authoring paper for IJETHE (International Journal of Educational Technology)"
+      ]
     },
     {
-      title: "Flipped Classroom Framework Development",
-      role: "AI in Education Research Assistant",
+      title: "AI in Education Research Assistant",
       org: "Math Department, NYU Abu Dhabi",
-      period: "Sep 2024 - Aug 2025",
-      description: "Co-designed and piloted a successful AI-enhanced flipped classroom model for Math 1000a (Precalculus) during Summer 2025, replacing traditional homework with in-class collaboration and modular AI tutors.",
+      period: "Sept 2024 - Aug 2025",
+      description: "Built and deployed 32 section-specific AI tutors using open-source LLMs via OpenWebUI on NYUAD's secure infrastructure.",
+      tags: ["LLMs", "OpenWebUI", "Privacy"],
       highlights: [
-        "Built and deployed 32 section-specific AI tutors on NYUAD's secure infrastructure",
-        "Used open-source LLMs via OpenWebUI, preserving student privacy",
-        "Currently co-authoring research paper for IJETHE",
-        "Enabled real-time instructor oversight of AI interactions"
-      ],
-      color: "#10B981"
+        "Replaced traditional homework with in-class collaboration + modular AI support",
+        "Preserved student privacy while enabling real-time instructor oversight",
+        "Designed experimental framework for controlled study"
+      ]
     },
     {
-      title: "LLMs for Engineering Education",
-      role: "AI Research Assistant",
-      org: "NYU Tandon Undergraduate Summer Research Program",
-      period: "Jun 2024 - Aug 2024",
-      description: "Designed and deployed an AI-powered chatbot on Discord for project-based learning in the EG 1004 engineering course.",
+      title: "Senior Capstone: AI Educational Assistant",
+      org: "NYU Abu Dhabi",
+      period: "Apr 2024 - May 2025",
+      description: "Collaborated with Professors Jim Kurose and Keith Ross on AI tutors for Computer Networking: A Top-Down Approach textbook.",
+      tags: ["RAG", "OpenAI", "Scale"],
       highlights: [
-        "Streamlined collaboration using generative AI for 200+ students",
-        "Processed over 10,000 text entries for accurate chatbot responses",
-        "Contributed to research for IEEE and ASEE venues on LLM-powered tools",
-        "Used LLMs to mediate team discussions and guide project plans"
+        "Deployed to 100,000+ monthly users on authors' website",
+        "Chapter-specific bots + interactive problem-solver companion",
+        "User/teacher profiles for progress tracking and research data collection"
       ],
-      color: "#F59E0B"
+      link: "https://gaia.cs.umass.edu/kurose_ross/interactive/"
     },
     {
-      title: "Backdoor Attacks on Deep Learning",
-      role: "Deep Learning Research Assistant",
+      title: "AI Research Assistant",
+      org: "NYU Tandon Summer Research Program",
+      period: "Jun - Aug 2024",
+      description: "Built AI chatbot on Discord to support 200+ EG 1004 engineering students with project guidance.",
+      tags: ["Discord Bot", "LLMs", "Collaboration"],
+      highlights: [
+        "Used LLMs to mediate team discussions and clarify misunderstandings",
+        "Processed 10,000+ student messages for training",
+        "Research preparing for IEEE and ASEE submissions"
+      ]
+    },
+    {
+      title: "Deep Learning Research Assistant",
       org: "NYUAD eBrain Lab",
-      period: "May 2023 - Sep 2023",
-      description: "Researched impact of backdoor attacks on autonomous driving and surveillance cameras under Prof. Muhammad Shafique.",
+      period: "May - Sept 2023",
+      description: "Researched backdoor attacks on autonomous driving and surveillance under Prof. Muhammad Shafique.",
+      tags: ["PyTorch", "Security", "Deep Learning"],
       highlights: [
-        "Created 'Backdoor-Toolbox' on GitHub using PyTorch",
-        "Built library of backdoor defenses and tested effectiveness",
-        "Used benchmark datasets for evaluation"
+        "Created 'Backdoor-Toolbox' on GitHub for attack execution",
+        "Built library of backdoor defenses with benchmark testing"
       ],
-      color: "#EC4899"
+      github: "https://github.com/shayanahmad7/backdoor-toolbox"
     }
   ];
 
   const technical = [
     {
-      title: "AI-LMS: Agentic Learning Management System",
+      title: "AI-LMS",
+      subtitle: "Agentic Learning Management System",
       period: "Aug 2025 - Present",
-      description: "Built an AI-orchestrated LMS where an autonomous agent tracks mastery across learning outcomes, collaborates with modular course tutors, and proactively notifies teachers/students to intervene, re-practice, or advance.",
-      tech: ["AI Agents", "LangChain", "Next.js", "MongoDB", "OpenAI"],
+      description: "An AI-orchestrated LMS where an autonomous agent tracks mastery across learning outcomes, collaborates with modular tutors, and notifies stakeholders proactively.",
+      tags: ["AI Agents", "LangChain", "Next.js", "MongoDB"],
       link: "https://ai-lms-jet.vercel.app/",
-      github: null,
-      status: "IN DEVELOPMENT"
+      features: [
+        "Chapter-aligned autonomous tutors with side-by-side views",
+        "Multi-modal assessment: canvas + screen recording + verbal reasoning",
+        "Teacher dashboards with mastery tracking and AI insights",
+        "Integration roadmap for Canvas, Blackboard, Moodle, etc."
+      ]
     },
     {
-      title: "Math-Confidence.com - Interactive AI Textbook",
+      title: "Math-Confidence.com",
+      subtitle: "Building the Future of Textbooks",
       period: "Feb 2025 - Present",
-      description: "NYUAD + Nokia Slush'd Hackathon Finalist (Top 10 of 100+ teams). Led a 4-person team to reimagine textbooks in the age of AI, converting McGraw-Hill's Pre-Algebra DeMYSTiFieD into an AI-driven eBook.",
-      tech: ["OpenAI Assistants API", "Next.js", "Supabase", "MongoDB", "Tailwind CSS"],
+      description: "NYUAD+Nokia Slush'd Hackathon Finalist (Top 10/100+ teams). Interactive AI textbook with 70+ section-specific 'mini tutors'.",
+      tags: ["OpenAI Assistants", "Next.js", "Supabase", "MongoDB"],
       link: "https://math-confidence.com",
       github: "https://github.com/shayanahmad7/math-confidence",
-      status: "LIVE"
+      features: [
+        "Converted McGraw-Hill's Pre-Algebra DeMYSTiFieD into interactive eBook",
+        "Dynamic quizzes with hints instead of solutions",
+        "Chat history storage for easy revision",
+        "Voice input/output for accessibility"
+      ]
     },
     {
-      title: "DrawExplain.com - AI-Powered Math Learning Platform",
-      period: "Sep 2024 - Present",
-      description: "Built a full-stack learning platform where students solve math problems on an interactive canvas while explaining their reasoning aloud, with AI providing feedback on both written and verbal solutions.",
-      tech: ["GPT-4o", "Whisper", "p5.js", "Next.js", "MongoDB", "GCP"],
+      title: "DrawExplain.com",
+      subtitle: "Draw it, Explain it, Master it!",
+      period: "Sept 2024 - Present",
+      description: "Learning platform where students solve math on canvas while explaining aloud, with AI evaluating both for conceptual understanding.",
+      tags: ["GPT-4o", "Whisper", "p5.js", "GCP"],
       link: "https://drawexplain.com",
       github: "https://github.com/shayanahmad7/drawexplain",
-      status: "LIVE"
+      features: [
+        "Interactive p5.js canvas for mathematical solutions",
+        "OpenAI Whisper for audio transcription of verbal reasoning",
+        "Developing as video certification tool inspired by Schoolhouse.world",
+        "Screen recording and anti-cheating features in progress"
+      ]
     },
     {
-      title: "AI Tutor for Computer Networking Textbook",
-      period: "Apr 2024 - May 2025",
-      description: "Senior Capstone Project. Collaborated with Professors Jim Kurose and Keith Ross to design and deploy an AI-powered educational assistant for their textbook Computer Networking: A Top-Down Approach.",
-      tech: ["RAG", "OpenAI", "Python", "Web Integration"],
-      link: "https://gaia.cs.umass.edu/kurose_ross/interactive/",
-      github: null,
-      status: "DEPLOYED TO 100K+ USERS"
-    },
-    {
-      title: "Abu Dhabi Eats: AI Meal Ordering",
-      period: "Feb 2024 - Present",
-      description: "Developed a full-stack application that automates meal ordering with AI-based recommendations. Collected 10,000+ meal entries using Selenium and OpenAI's GPT API.",
-      tech: ["Handlebars", "Node.js", "Express", "Selenium", "GPT API"],
-      link: null,
+      title: "Abu Dhabi Eats",
+      subtitle: "AI-Powered Meal Ordering",
+      period: "Feb - May 2024",
+      description: "Full-stack meal ordering app with AI recommendations based on preferences and health goals.",
+      tags: ["Node.js", "Express", "Handlebars", "Selenium"],
       github: "https://github.com/shayanahmad7/softwareengineeringproject",
-      status: "COMPLETE"
+      features: [
+        "Automated data collection for 10,000+ meal entries using Selenium",
+        "OpenAI GPT API for personalized meal plans",
+        "Direct ordering links within meal plans"
+      ]
     }
   ];
 
   const teaching = [
     {
-      role: "Teaching Assistant",
-      course: "What Really Matters: Leadership with no Regrets",
-      org: "NYU Wagner Graduate School of Public Service",
-      period: "Aug 2024 - Dec 2024",
-      details: "Assisted in teaching leadership course by Imam Khalid Latif and Yael Shy. Managed 20-25 students, graded weekly papers/videos, provided feedback."
+      title: "Teaching Assistant",
+      org: "NYU Wagner: 'What Really Matters: Leadership with no Regrets'",
+      period: "Aug - Dec 2024",
+      description: "Supported course delivery for 25 students. Evaluated weekly papers/video reflections, computed final grades."
     },
     {
-      role: "Mathematics Peer Tutor",
-      course: "Precalculus and Calculus (1, 2, 3)",
+      title: "Mathematics Peer Tutor",
       org: "NYU Tandon TRIO Scholars Program",
-      period: "Aug 2024 - Dec 2024",
-      details: "Conducted weekly one-on-one tutoring sessions to review concepts, solve problems, and prepare for exams. Tracked student progress through detailed weekly forms."
+      period: "Aug - Dec 2024",
+      description: "Comprehensive tutoring for Precalculus and Calculus (1, 2, 3). Weekly one-on-one sessions with progress tracking."
     },
     {
-      role: "Mathematics Tutor",
-      course: "Competition Math (MOEMS, AMC, AIME, IMO)",
+      title: "Mathematics Tutor",
       org: "LessonPal, Valdo Academics, Russian Math Tutors",
       period: "Oct 2022 - Present",
-      details: "Conducted 200+ online tutoring sessions for high school, SAT math, and competition mathematics. Developed customized lesson plans tailored to individual student needs."
+      description: "200+ online sessions for competitive mathematics (MOEMS, AMC, AIME, IMO), SAT prep, and high school math."
     },
     {
-      role: "Mathematics Peer Tutor",
-      course: "Calculus, Discrete Math, Linear Algebra",
+      title: "Mathematics Peer Tutor",
       org: "NYUAD Academic Resource Center",
-      period: "Oct 2022 - June 2023",
-      details: "Collaborated with Professor Hisham Sati to establish Peer Tutoring Center. Conducted 150 peer tutoring sessions for struggling students."
+      period: "Oct 2022 - Jun 2023",
+      description: "150 sessions for students struggling with Calculus, Discrete Mathematics, and Linear Algebra."
     },
     {
-      role: "Mathematics Teacher (Grades 4-8)",
-      course: "Flipped Classroom with Khan Academy",
+      title: "Mathematics Teacher (Grades 4-8)",
       org: "Alma Mater School, Lahore, Pakistan",
-      period: "Jun 2020 - Nov 2020",
-      details: "Implemented flipped classroom model based on pedagogical research. Advanced 4th graders to Algebra ahead of schedule. Improved student engagement through growth mindset sessions."
+      period: "Jun - Nov 2020",
+      description: "Implemented flipped classroom using Khan Academy. Advanced 4th graders to Algebra ahead of schedule. Regular growth mindset sessions."
     }
   ];
 
   const honors = [
     {
-      title: "International Math Competition (IMC), Bulgaria",
-      award: "Honorable Mention - 32 points (33 for Bronze)",
-      date: "Aug 2024",
-      description: "Selected through competitive process to represent NYU Abu Dhabi. Just one point shy of a Bronze medal."
+      title: "International Math Competition 2024",
+      award: "Honorable Mention",
+      description: "NYU Abu Dhabi team member. Scored 32 points (33 for Bronze medal).",
+      period: "Aug 2024"
     },
     {
-      title: "International Math Olympiad (IMO)",
-      award: "Pakistan National Team Member",
-      date: "Jul 2021",
-      description: "Handpicked as one of the top six competitors nationwide for the most prestigious mathematical competition in the world."
+      title: "International Math Olympiad 2021",
+      award: "National Team Member",
+      description: "Selected as one of six members of Pakistan National Math Team.",
+      period: "Jul 2021"
     },
     {
-      title: "President, Mathematics Society",
-      award: "NYU Abu Dhabi",
-      date: "Jun 2022 - Jun 2023",
-      description: "Managed club responsibilities including recruitment, finance, and event organization. Organized events to promote student interest in mathematics. Worked with Professor Alberto Gandolfi to organize IMC team coaching."
+      title: "President, NYUAD Mathematics Society",
+      award: "Leadership Role",
+      description: "Managed recruitment, events, peer tutoring center, and IMC coaching.",
+      period: "Jun 2022 - Jun 2023"
     }
   ];
 
   const volunteer = [
     {
-      title: "Izteraab - Education NGO",
+      title: "Izteraab.org",
       role: "Co-Founder",
       period: "Aug 2025 - Present",
-      description: "Leading a not-for-profit initiative transforming government classrooms in Pakistan through AI-powered, mastery-based learning.",
+      description: "Leading not-for-profit initiative transforming government classrooms in Pakistan through AI-powered, mastery-based learning.",
       link: "https://izteraab.org",
       highlights: [
-        "Launching pilot program leveraging Khanmigo partnership for personalized learning paths",
+        "Partnering with Khan Academy's Khanmigo for personalized learning",
         "Training teachers to act as coaches in AI-enhanced environments",
-        "Driving partnerships with government schools and education NGOs to enable scaling"
+        "Building partnerships with government schools and education NGOs"
       ]
     },
     {
       title: "Schoolhouse.world",
       role: "Founding Tutor & Project Manager",
       period: "Jun 2020 - Present",
-      description: "Founded by Sal Khan (Khan Academy). Selected among the first 20 tutors on the platform.",
+      description: "Selected among first 20 tutors on Sal Khan's free tutoring platform. Tutored 100+ students globally in 50+ sessions.",
       link: "https://schoolhouse.world",
       highlights: [
-        "Tutored 100+ students globally in 50+ sessions on math and SAT",
-        "Initiated pilot with ReFocus Media Labs (Athens) for migrant children education",
-        "Laying ground for scalable volunteer-based online school model for underserved communities"
+        "Shared ideas with Sal Khan in early team meetings",
+        "Initiated pilot with ReFocus Media Labs (Athens) for migrant education",
+        "Proposing structured, year-long cohort model for underserved communities"
       ]
     },
     {
-      title: "PrepLion - YouTube Channel & Tutoring Business",
-      role: "Founder & Entrepreneur",
+      title: "PrepLion",
+      role: "Founder",
       period: "Apr 2020 - Jan 2022",
-      description: "Built a tutoring business via YouTube/Instagram, teaching SAT Math and Olympiad Geometry to 100+ students across Pakistan.",
+      description: "Built tutoring business via YouTube/Instagram teaching SAT Math and Olympiad Geometry to 100+ students across Pakistan.",
       link: "https://instagram.com/preplion",
       highlights: [
-        "Led group classes of 20+ students with tailored instruction",
-        "Offered free Olympiad Geometry training for aspiring IMO participants",
-        "Several students went on to join Pakistan's national team"
+        "Led group classes of 20+ students",
+        "Free Olympiad training; several students advanced to Pakistan IMO team",
+        "Created educational content on YouTube channel"
       ]
     }
   ];
 
+  const renderContent = () => {
+    switch(activeTab) {
+      case 'research':
+        return (
+          <div className="space-y-8">
+            {research.map((item, i) => (
+              <motion.div
+                key={i}
+                className="bg-black border-2 border-white/10 p-8 md:p-12 hover:border-[#4ECDC4] transition-all group"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+              >
+                <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-6">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-4 mb-3">
+                      <span className="text-[#4ECDC4] font-mono text-sm">[ {String(i + 1).padStart(2, '0')} ]</span>
+                      <span className="text-white/40 font-mono text-xs">{item.period}</span>
+                    </div>
+                    <h3 className="text-2xl md:text-3xl font-black text-white mb-2 group-hover:text-[#4ECDC4] transition-colors">
+                      {item.title}
+                    </h3>
+                    <p className="text-[#FF6B35] font-mono text-sm mb-4">{item.org}</p>
+                    <p className="text-white/70 leading-relaxed mb-6">
+                      {item.description}
+                    </p>
+                    <div className="space-y-2">
+                      {item.highlights.map((highlight, j) => (
+                        <div key={j} className="flex items-start gap-3">
+                          <div className="w-1.5 h-1.5 bg-[#FFB800] mt-2 flex-shrink-0" />
+                          <p className="text-white/60 text-sm">{highlight}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                  {(item.link || item.github) && (
+                    <div className="flex gap-3 flex-shrink-0">
+                      {item.link && (
+                        <a 
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-12 h-12 border-2 border-[#4ECDC4] hover:bg-[#4ECDC4] hover:text-black flex items-center justify-center transition-all"
+                        >
+                          <ExternalLink className="w-5 h-5" />
+                        </a>
+                      )}
+                      {item.github && (
+                        <a 
+                          href={item.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-12 h-12 border-2 border-white/20 hover:border-white flex items-center justify-center transition-all"
+                        >
+                          <Github className="w-5 h-5" />
+                        </a>
+                      )}
+                    </div>
+                  )}
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {item.tags.map((tag, j) => (
+                    <span key={j} className="px-3 py-1 bg-white/5 border border-white/10 text-white/70 text-xs font-mono">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        );
+
+      case 'technical':
+        return (
+          <div className="space-y-8">
+            {technical.map((item, i) => (
+              <motion.div
+                key={i}
+                className="bg-black border-2 border-white/10 hover:border-[#FF6B35] transition-all group"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+              >
+                <div className="p-8 md:p-12">
+                  <div className="flex items-start justify-between gap-6 mb-6">
+                    <div className="flex-1">
+                      <div className="flex items-center gap-4 mb-3">
+                        <span className="text-[#FF6B35] font-mono text-sm font-black">[ PROJECT_{String(i + 1).padStart(2, '0')} ]</span>
+                        <span className="text-white/40 font-mono text-xs">{item.period}</span>
+                      </div>
+                      <h3 className="text-3xl md:text-4xl font-black text-white mb-2">
+                        {item.title}
+                      </h3>
+                      <p className="text-[#4ECDC4] text-lg mb-4">{item.subtitle}</p>
+                      <p className="text-white/70 leading-relaxed mb-6">
+                        {item.description}
+                      </p>
+                    </div>
+                    <div className="flex gap-3 flex-shrink-0">
+                      {item.link && (
+                        <a 
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-14 h-14 border-2 border-[#FF6B35] hover:bg-[#FF6B35] hover:text-black flex items-center justify-center transition-all group-hover:scale-110"
+                        >
+                          <ExternalLink className="w-6 h-6" />
+                        </a>
+                      )}
+                      {item.github && (
+                        <a 
+                          href={item.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="w-14 h-14 border-2 border-white/20 hover:border-white flex items-center justify-center transition-all"
+                        >
+                          <Github className="w-6 h-6" />
+                        </a>
+                      )}
+                    </div>
+                  </div>
+
+                  {item.features && (
+                    <div className="mb-6">
+                      <div className="text-white/40 font-mono text-xs mb-3">KEY_FEATURES:</div>
+                      <div className="grid md:grid-cols-2 gap-3">
+                        {item.features.map((feature, j) => (
+                          <div key={j} className="flex items-start gap-2">
+                            <div className="w-1 h-1 bg-[#FFB800] mt-2 flex-shrink-0" />
+                            <p className="text-white/60 text-sm">{feature}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  <div className="flex flex-wrap gap-2">
+                    {item.tags.map((tag, j) => (
+                      <span key={j} className="px-3 py-1.5 bg-white/5 border border-white/10 text-white/80 text-xs font-mono">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        );
+
+      case 'teaching':
+        return (
+          <div className="grid md:grid-cols-2 gap-6">
+            {teaching.map((item, i) => (
+              <motion.div
+                key={i}
+                className="bg-black border-l-4 border-[#FFB800] p-8 hover:border-[#4ECDC4] transition-all"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+              >
+                <div className="text-[#FFB800] font-mono text-xs mb-2">{item.period}</div>
+                <h3 className="text-xl font-black text-white mb-1">
+                  {item.title}
+                </h3>
+                <p className="text-[#4ECDC4] text-sm mb-4 font-mono">{item.org}</p>
+                <p className="text-white/70 leading-relaxed text-sm">
+                  {item.description}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        );
+
+      case 'honors':
+        return (
+          <div className="space-y-6">
+            {honors.map((item, i) => (
+              <motion.div
+                key={i}
+                className="bg-black border-2 border-white/10 p-8 md:p-10 hover:border-[#FFB800] transition-all group"
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+              >
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
+                  <div>
+                    <h3 className="text-2xl md:text-3xl font-black text-white mb-2 group-hover:text-[#FFB800] transition-colors">
+                      {item.title}
+                    </h3>
+                    <div className="inline-block px-4 py-1 bg-[#FFB800] text-black font-bold text-sm">
+                      {item.award}
+                    </div>
+                  </div>
+                  <div className="text-white/40 font-mono text-sm">{item.period}</div>
+                </div>
+                <p className="text-white/70 leading-relaxed">
+                  {item.description}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        );
+
+      case 'volunteer':
+        return (
+          <div className="space-y-8">
+            {volunteer.map((item, i) => (
+              <motion.div
+                key={i}
+                className="bg-black border-2 border-white/10 hover:border-[#4ECDC4] transition-all"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+              >
+                <div className="p-8 md:p-12">
+                  <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-6">
+                    <div className="flex-1">
+                      <div className="flex items-center gap-4 mb-3">
+                        <span className="px-3 py-1 bg-[#4ECDC4] text-black font-bold text-xs">
+                          {item.role}
+                        </span>
+                        <span className="text-white/40 font-mono text-xs">{item.period}</span>
+                      </div>
+                      <h3 className="text-2xl md:text-3xl font-black text-white mb-4">
+                        {item.title}
+                      </h3>
+                      <p className="text-white/70 leading-relaxed mb-6">
+                        {item.description}
+                      </p>
+                      <div className="space-y-2">
+                        {item.highlights.map((highlight, j) => (
+                          <div key={j} className="flex items-start gap-3">
+                            <div className="w-1.5 h-1.5 bg-[#FF6B35] mt-2 flex-shrink-0" />
+                            <p className="text-white/60 text-sm">{highlight}</p>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                    {item.link && (
+                      <a 
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-14 h-14 border-2 border-[#4ECDC4] hover:bg-[#4ECDC4] hover:text-black flex items-center justify-center transition-all"
+                      >
+                        <ExternalLink className="w-6 h-6" />
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        );
+
+      default:
+        return null;
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white">
       {/* Header */}
-      <div className="bg-black border-b-2 border-white/10 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-6">
+      <div className="bg-black border-b-2 border-white/10 sticky top-0 z-40 backdrop-blur-sm bg-black/90">
+        <div className="max-w-7xl mx-auto px-6 py-4">
           <Link 
             to={createPageUrl("Home")}
             className="inline-flex items-center gap-2 text-white/60 hover:text-[#FF6B35] transition-colors font-mono text-sm"
@@ -235,37 +513,37 @@ export default function Projects() {
       </div>
 
       {/* Hero */}
-      <section className="py-24 px-6">
+      <section className="py-20 px-6 bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a]">
         <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="text-sm font-mono text-[#FF6B35] mb-4">[ PORTFOLIO ]</div>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-[0.9]">
-              WORK &<br />
-              <span className="text-[#4ECDC4]">EXPERIENCE</span>
+            <div className="text-[#FF6B35] font-mono text-sm mb-4">&gt; EXPERIENCE_&_WORK.md</div>
+            <h1 className="text-5xl md:text-7xl font-black mb-6">
+              FULL<br />
+              <span className="text-[#4ECDC4]">PORTFOLIO</span>
             </h1>
-            <p className="text-white/60 max-w-3xl text-lg md:text-xl">
-              A comprehensive overview of my research, technical projects, teaching experience, and community involvement.
+            <p className="text-white/60 max-w-2xl text-lg">
+              Research, projects, teaching, honors, and community work — organized by category.
             </p>
           </motion.div>
         </div>
       </section>
 
       {/* Tabs */}
-      <section className="px-6 pb-12">
+      <section className="px-6 bg-[#0a0a0a] sticky top-16 z-30 border-b-2 border-white/10 backdrop-blur-sm bg-black/90">
         <div className="max-w-7xl mx-auto">
-          <div className="flex gap-2 overflow-x-auto pb-4">
+          <div className="flex overflow-x-auto gap-1 py-4 scrollbar-hide">
             {tabs.map((tab) => (
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`px-6 py-3 font-bold text-sm whitespace-nowrap transition-all border-2 ${
+                className={`px-6 py-3 font-black text-sm whitespace-nowrap transition-all ${
                   activeTab === tab.id
-                    ? 'bg-[#FF6B35] text-black border-[#FF6B35]'
-                    : 'bg-transparent text-white/60 border-white/10 hover:border-white/30'
+                    ? 'bg-[#FF6B35] text-black'
+                    : 'bg-white/5 text-white/60 hover:bg-white/10 hover:text-white'
                 }`}
               >
                 {tab.label}
@@ -276,218 +554,39 @@ export default function Projects() {
       </section>
 
       {/* Content */}
-      <section className="px-6 pb-32">
+      <section className="py-16 px-6 bg-[#0a0a0a]">
         <div className="max-w-7xl mx-auto">
-          {/* Research Tab */}
-          {activeTab === 'research' && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="space-y-8"
+          <motion.div
+            key={activeTab}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.4 }}
+          >
+            {renderContent()}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Footer CTA */}
+      <section className="py-20 px-6 bg-black border-t-2 border-white/10">
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className="text-3xl md:text-4xl font-black mb-6">
+            WANT TO KNOW <span className="text-[#4ECDC4]">MORE?</span>
+          </h3>
+          <div className="flex items-center justify-center gap-4 flex-wrap">
+            <Link 
+              to={createPageUrl("About")}
+              className="px-10 py-4 bg-white text-black font-black hover:bg-[#4ECDC4] transition-all"
             >
-              {research.map((item, i) => (
-                <div key={i} className="bg-black border-2 border-white/10 p-8 md:p-12 hover:border-[#FF6B35] transition-all group">
-                  <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-6">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-4 mb-3">
-                        <span className="text-sm font-mono text-[#4ECDC4]">[{String(i + 1).padStart(2, '0')}]</span>
-                        <div className="h-px flex-1 bg-white/10" />
-                        <span className="text-sm font-mono text-white/40">{item.period}</span>
-                      </div>
-                      <h3 className="text-3xl md:text-4xl font-black mb-2 group-hover:text-[#FF6B35] transition-colors">
-                        {item.title}
-                      </h3>
-                      <p className="text-white/60 font-mono text-sm mb-1">{item.role}</p>
-                      <p className="text-white/40 text-sm mb-6">{item.org}</p>
-                      <p className="text-white/80 text-lg leading-relaxed mb-6">
-                        {item.description}
-                      </p>
-                      <div className="space-y-2">
-                        {item.highlights.map((highlight, j) => (
-                          <div key={j} className="flex items-start gap-3">
-                            <span className="text-[#4ECDC4] text-xl leading-none">→</span>
-                            <span className="text-white/70">{highlight}</span>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </motion.div>
-          )}
-
-          {/* Technical Projects Tab */}
-          {activeTab === 'technical' && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="space-y-8"
+              MY STORY
+            </Link>
+            <Link 
+              to={createPageUrl("WhyPRG")}
+              className="px-10 py-4 border-2 border-white text-white font-black hover:bg-white hover:text-black transition-all"
             >
-              {technical.map((project, i) => (
-                <div key={i} className="bg-black border-2 border-white/10 p-8 md:p-12 hover:border-white/30 transition-all group relative overflow-hidden">
-                  <div className="absolute top-4 right-4">
-                    <span className={`px-3 py-1 text-xs font-mono border-2 ${
-                      project.status.includes('LIVE') ? 'border-[#10B981] text-[#10B981]' :
-                      project.status.includes('DEVELOPMENT') ? 'border-[#FFB800] text-[#FFB800]' :
-                      'border-white/30 text-white/60'
-                    }`}>
-                      {project.status}
-                    </span>
-                  </div>
-
-                  <div className="flex items-center gap-4 mb-4">
-                    <span className="text-sm font-mono text-[#FF6B35]">[{String(i + 1).padStart(2, '0')}]</span>
-                    <div className="h-px flex-1 bg-white/10" />
-                    <span className="text-sm font-mono text-white/40">{project.period}</span>
-                  </div>
-
-                  <h3 className="text-3xl md:text-4xl font-black mb-4 group-hover:translate-x-2 transition-transform">
-                    {project.title}
-                  </h3>
-
-                  <p className="text-white/80 text-lg leading-relaxed mb-6 max-w-4xl">
-                    {project.description}
-                  </p>
-
-                  <div className="flex flex-wrap gap-3 mb-6">
-                    {project.tech.map((tag, j) => (
-                      <span key={j} className="px-4 py-1.5 bg-white/5 border border-white/10 text-white/80 text-sm font-mono">
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-
-                  <div className="flex items-center gap-4">
-                    {project.link && (
-                      <a 
-                        href={project.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-6 py-3 bg-white text-black font-bold hover:bg-[#4ECDC4] transition-all inline-flex items-center gap-2"
-                      >
-                        <ExternalLink className="w-4 h-4" />
-                        VIEW LIVE
-                      </a>
-                    )}
-                    {project.github && (
-                      <a 
-                        href={project.github}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-6 py-3 border-2 border-white/20 hover:border-[#FF6B35] font-bold transition-all inline-flex items-center gap-2"
-                      >
-                        <Github className="w-4 h-4" />
-                        GITHUB
-                      </a>
-                    )}
-                  </div>
-                </div>
-              ))}
-            </motion.div>
-          )}
-
-          {/* Teaching Tab */}
-          {activeTab === 'teaching' && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="grid md:grid-cols-2 gap-6"
-            >
-              {teaching.map((item, i) => (
-                <div key={i} className="bg-black border-2 border-white/10 p-8 hover:border-[#4ECDC4] transition-all">
-                  <div className="flex items-start justify-between mb-4">
-                    <span className="text-sm font-mono text-[#FFB800]">[{String(i + 1).padStart(2, '0')}]</span>
-                    <span className="text-xs font-mono text-white/40">{item.period}</span>
-                  </div>
-                  <h3 className="text-xl md:text-2xl font-black mb-2">{item.role}</h3>
-                  <p className="text-[#4ECDC4] font-mono text-sm mb-1">{item.course}</p>
-                  <p className="text-white/40 text-sm mb-4">{item.org}</p>
-                  <p className="text-white/70 leading-relaxed">{item.details}</p>
-                </div>
-              ))}
-            </motion.div>
-          )}
-
-          {/* Honors Tab */}
-          {activeTab === 'honors' && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="space-y-6"
-            >
-              {honors.map((item, i) => (
-                <div key={i} className="bg-black border-2 border-white/10 p-8 md:p-12 hover:border-[#FFB800] transition-all group">
-                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
-                    <div className="flex-1">
-                      <div className="flex items-center gap-4 mb-3">
-                        <span className="text-sm font-mono text-[#FFB800]">[{String(i + 1).padStart(2, '0')}]</span>
-                        <div className="h-px flex-1 bg-white/10" />
-                      </div>
-                      <h3 className="text-3xl md:text-4xl font-black mb-2 group-hover:text-[#FFB800] transition-colors">
-                        {item.title}
-                      </h3>
-                      <p className="text-[#4ECDC4] text-lg font-bold mb-2">{item.award}</p>
-                      <p className="text-white/70 leading-relaxed">{item.description}</p>
-                    </div>
-                    <span className="text-white/40 font-mono text-sm flex-shrink-0">{item.date}</span>
-                  </div>
-                </div>
-              ))}
-            </motion.div>
-          )}
-
-          {/* Volunteer Tab */}
-          {activeTab === 'volunteer' && (
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="space-y-8"
-            >
-              {volunteer.map((item, i) => (
-                <div key={i} className="bg-black border-2 border-white/10 p-8 md:p-12 hover:border-[#4ECDC4] transition-all group">
-                  <div className="flex items-center gap-4 mb-6">
-                    <span className="text-sm font-mono text-[#4ECDC4]">[{String(i + 1).padStart(2, '0')}]</span>
-                    <div className="h-px flex-1 bg-white/10" />
-                    <span className="text-sm font-mono text-white/40">{item.period}</span>
-                  </div>
-
-                  <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
-                    <div className="flex-1">
-                      <h3 className="text-3xl md:text-4xl font-black mb-2 group-hover:text-[#4ECDC4] transition-colors">
-                        {item.title}
-                      </h3>
-                      <p className="text-[#FF6B35] font-bold mb-4">{item.role}</p>
-                      <p className="text-white/80 text-lg leading-relaxed mb-6">
-                        {item.description}
-                      </p>
-
-                      <div className="space-y-2 mb-6">
-                        {item.highlights.map((highlight, j) => (
-                          <div key={j} className="flex items-start gap-3">
-                            <span className="text-[#4ECDC4] text-xl leading-none">→</span>
-                            <span className="text-white/70">{highlight}</span>
-                          </div>
-                        ))}
-                      </div>
-
-                      {item.link && (
-                        <a 
-                          href={item.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="inline-flex items-center gap-2 px-6 py-3 border-2 border-white/20 hover:border-[#4ECDC4] font-bold transition-all"
-                        >
-                          <ExternalLink className="w-4 h-4" />
-                          VISIT SITE
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </motion.div>
-          )}
+              WHY PRG
+            </Link>
+          </div>
         </div>
       </section>
     </div>
