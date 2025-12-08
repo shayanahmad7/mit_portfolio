@@ -1,73 +1,68 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown, Mail, Linkedin, Github, ExternalLink, GraduationCap, Lightbulb, Users, Bot, ChevronRight, BookOpen, Code, Heart } from 'lucide-react';
+import { Mail, Linkedin, Github, ExternalLink, ChevronRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 
 const profileImageUrl = "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_68ece077245b833bff0195c7/aba735dd1_Shayan_Linkedin_Picture.jpg";
 
 export default function Home() {
-  const fadeInUp = {
-    initial: { opacity: 0, y: 30 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 }
-  };
+  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [currentWord, setCurrentWord] = useState(0);
+  
+  const rotatingWords = ["Builder", "Researcher", "Educator", "Dreamer", "Problem Solver"];
 
-  const staggerContainer = {
-    animate: {
-      transition: {
-        staggerChildren: 0.1
-      }
-    }
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWord((prev) => (prev + 1) % rotatingWords.length);
+    }, 2000);
+    return () => clearInterval(interval);
+  }, []);
+
+  useEffect(() => {
+    const handleMouseMove = (e) => {
+      setMousePos({ x: e.clientX, y: e.clientY });
+    };
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
 
   const featuredProjects = [
     {
-      title: "AI-LMS: Agentic Learning Management System",
+      title: "AI-LMS",
+      subtitle: "Agentic Learning Management System",
       description: "An AI-orchestrated LMS where an autonomous agent tracks mastery across learning outcomes, collaborates with modular course tutors, and proactively notifies teachers/students to intervene or advance.",
       tags: ["AI Agents", "Mastery Learning", "EdTech"],
       link: "https://ai-lms-jet.vercel.app/",
-      icon: Bot,
-      color: "from-blue-500 to-indigo-600"
+      number: "01",
+      color: "#4F46E5"
     },
     {
-      title: "DrawExplain: Draw it, Explain it, Master it!",
+      title: "DrawExplain",
+      subtitle: "Draw it, Explain it, Master it!",
       description: "A learning platform where students solve math problems on an interactive canvas while explaining reasoning aloud, with AI evaluating both written work and verbal explanations.",
       tags: ["GPT-4o", "Multimodal AI", "Assessment"],
       link: "https://drawexplain.com",
-      icon: Lightbulb,
-      color: "from-emerald-500 to-teal-600"
+      number: "02",
+      color: "#10B981"
     },
     {
-      title: "Math-Confidence: Interactive AI Textbooks",
+      title: "Math-Confidence",
+      subtitle: "Interactive AI Textbooks",
       description: "NYUAD+Nokia Hackathon Finalist. Converted textbooks into AI-driven eBooks with 70+ section-specific 'mini tutors' for mastery-based learning.",
       tags: ["OpenAI Assistants", "Modular AI", "Next.js"],
       link: "https://math-confidence.com",
-      icon: BookOpen,
-      color: "from-amber-500 to-orange-600"
+      number: "03",
+      color: "#F59E0B"
     },
     {
-      title: "AI Tutor for Computer Networking Textbook",
+      title: "AI Networking Tutor",
+      subtitle: "100K+ Monthly Users",
       description: "Senior capstone with Professors Jim Kurose and Keith Ross. Deployed AI tutors to 100,000+ monthly users on the authors' textbook website.",
       tags: ["RAG", "Interactive Learning", "Scale"],
       link: "https://gaia.cs.umass.edu/kurose_ross/interactive/",
-      icon: Code,
-      color: "from-purple-500 to-pink-600"
-    }
-  ];
-
-  const researchHighlights = [
-    {
-      title: "AI-Enhanced Flipped Classrooms",
-      role: "Tamayyuz Research Fellow",
-      org: "NYUAD Center for Teaching & Learning",
-      description: "Leading mixed-methods research on flipped classrooms with AI-powered tutoring systems. Co-designed and piloted with 50+ students, co-authoring paper for IJETHE."
-    },
-    {
-      title: "LLMs for Collaborative Learning",
-      role: "AI Research Assistant",
-      org: "NYU Tandon Summer Research",
-      description: "Built AI chatbot for 200+ engineering students. Research on using LLMs to enhance team collaboration, preparing submissions for IEEE and ASEE."
+      number: "04",
+      color: "#EC4899"
     }
   ];
 
@@ -164,7 +159,7 @@ export default function Home() {
               </p>
 
               <motion.div 
-                className="flex items-center gap-4 mb-12"
+                className="flex items-center gap-4 mb-12 flex-wrap"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8 }}
