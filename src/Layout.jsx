@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
-import { Menu, X, Home, User, Folder, Target, FileText, Mail } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Layout({ children }) {
@@ -9,11 +9,11 @@ export default function Layout({ children }) {
   const location = useLocation();
 
   const navItems = [
-    { name: 'Home', page: 'Home', icon: Home },
-    { name: 'About', page: 'About', icon: User },
-    { name: 'Projects', page: 'Projects', icon: Folder },
-    { name: 'Why PRG', page: 'WhyPRG', icon: Target },
-    { name: 'Resume', page: 'Resume', icon: FileText },
+    { name: 'HOME', page: 'Home' },
+    { name: 'ABOUT', page: 'About' },
+    { name: 'PROJECTS', page: 'Projects' },
+    { name: 'WHY PRG', page: 'WhyPRG' },
+    { name: 'RESUME', page: 'Resume' },
   ];
 
   const isActive = (pageName) => {
@@ -23,16 +23,16 @@ export default function Layout({ children }) {
   };
 
   return (
-    <div className="min-h-screen bg-[#FAFAF5]">
-      {/* Desktop Navigation */}
-      <nav className="hidden lg:block fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-[#0D1B2A]/5">
+    <div className="min-h-screen bg-black text-white">
+      {/* Desktop Navigation - Brutalist */}
+      <nav className="hidden lg:block fixed top-0 left-0 right-0 z-50 bg-black/90 backdrop-blur-sm border-b-2 border-white/10">
         <div className="max-w-7xl mx-auto px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex items-center justify-between h-20">
             <Link 
               to={createPageUrl('Home')}
-              className="text-lg font-medium text-[#0D1B2A] hover:text-[#E07A5F] transition-colors"
+              className="text-xl font-black hover:text-[#FF6B35] transition-colors tracking-tight"
             >
-              Shayan Ahmad
+              SHAYAN_AHMAD
             </Link>
 
             <div className="flex items-center gap-1">
@@ -40,39 +40,32 @@ export default function Layout({ children }) {
                 <Link
                   key={item.name}
                   to={createPageUrl(item.page)}
-                  className={`px-4 py-2 rounded-full text-sm transition-all ${
+                  className={`px-5 py-3 font-bold text-sm transition-all border-2 ${
                     isActive(item.page)
-                      ? 'bg-[#0D1B2A] text-white'
-                      : 'text-[#0D1B2A]/70 hover:bg-[#0D1B2A]/5'
+                      ? 'bg-[#FF6B35] text-black border-[#FF6B35]'
+                      : 'text-white border-transparent hover:border-white/20'
                   }`}
                 >
                   {item.name}
                 </Link>
               ))}
-              <a
-                href="mailto:sa6097@nyu.edu"
-                className="ml-4 flex items-center gap-2 px-4 py-2 bg-[#E07A5F] text-white rounded-full hover:bg-[#E07A5F]/90 transition-all text-sm"
-              >
-                <Mail className="w-4 h-4" />
-                Contact
-              </a>
             </div>
           </div>
         </div>
       </nav>
 
       {/* Mobile Navigation */}
-      <nav className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-lg border-b border-[#0D1B2A]/5">
-        <div className="flex items-center justify-between h-14 px-4">
+      <nav className="lg:hidden fixed top-0 left-0 right-0 z-50 bg-black/95 backdrop-blur-sm border-b-2 border-white/10">
+        <div className="flex items-center justify-between h-16 px-4">
           <Link 
             to={createPageUrl('Home')}
-            className="text-lg font-medium text-[#0D1B2A]"
+            className="text-lg font-black"
           >
-            Shayan Ahmad
+            SHAYAN_A
           </Link>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 text-[#0D1B2A]"
+            className="p-2 border-2 border-white/20 hover:border-[#FF6B35] transition-all"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -86,32 +79,30 @@ export default function Layout({ children }) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="lg:hidden fixed inset-0 z-40 bg-white"
+            className="lg:hidden fixed inset-0 z-40 bg-black"
           >
-            <div className="pt-20 px-6">
-              <div className="space-y-2">
-                {navItems.map((item) => (
-                  <Link
+            <div className="pt-24 px-6">
+              <div className="space-y-4">
+                {navItems.map((item, i) => (
+                  <motion.div
                     key={item.name}
-                    to={createPageUrl(item.page)}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className={`flex items-center gap-3 px-4 py-3 rounded-xl text-lg transition-all ${
-                      isActive(item.page)
-                        ? 'bg-[#0D1B2A] text-white'
-                        : 'text-[#0D1B2A]/70 hover:bg-[#0D1B2A]/5'
-                    }`}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: i * 0.1 }}
                   >
-                    <item.icon className="w-5 h-5" />
-                    {item.name}
-                  </Link>
+                    <Link
+                      to={createPageUrl(item.page)}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className={`block px-6 py-4 font-black text-2xl transition-all border-l-4 ${
+                        isActive(item.page)
+                          ? 'bg-[#FF6B35]/20 border-[#FF6B35] text-[#FF6B35]'
+                          : 'border-transparent hover:border-white/20 hover:pl-8'
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  </motion.div>
                 ))}
-                <a
-                  href="mailto:sa6097@nyu.edu"
-                  className="flex items-center gap-3 px-4 py-3 bg-[#E07A5F] text-white rounded-xl text-lg mt-4"
-                >
-                  <Mail className="w-5 h-5" />
-                  Contact Me
-                </a>
               </div>
             </div>
           </motion.div>
@@ -119,7 +110,7 @@ export default function Layout({ children }) {
       </AnimatePresence>
 
       {/* Main Content */}
-      <main className="lg:pt-16">
+      <main className="lg:pt-20">
         {children}
       </main>
     </div>
