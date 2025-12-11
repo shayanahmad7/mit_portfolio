@@ -28,3 +28,9 @@ dist-ssr
 *.sw?
 
 .env
+
+# Documents folder (exclude from repo)
+../extracted_text/
+../Shayan Grad School Docs/
+../*.pdf
+../*.txt
