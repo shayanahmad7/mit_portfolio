@@ -96,6 +96,7 @@ export default function Projects() {
       description: "My research and building experiences have now converged into a single, integrated platform: an agentic Learning Management System that I'm currently building as my startup. This system empowers teachers to easily create custom AI tutors within a unified learning interface that combines notes, videos, and interactive tools—moving far beyond a simple chatbot. The 'agentic' core is an orchestrating AI that monitors student interactions with modular tutors to track their mastery across learning outcomes. It keeps everyone in the loop, notifying teachers which students need personal, human support while giving students encouraging feedback and guidance. This vision is the culmination of my journey, uniting the modularity of Math-Confidence and the rich assessment models of DrawExplain into one scalable, practical system for real classrooms.",
       tags: ["AI Agents", "LangChain", "Next.js", "MongoDB"],
       link: "https://ai-lms-jet.vercel.app/",
+      imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6936af0265452204c9f22c57/075c932a6_image.png",
       features: [
         "Chapter-aligned autonomous tutors with side-by-side views (notes/slides, videos, practice)",
         "Multi-modal assessment: canvas + screen recording + verbal reasoning with AI feedback",
@@ -218,7 +219,7 @@ export default function Projects() {
       title: "Izteraab.org",
       role: "Co-Founder",
       period: "Aug 2025 - Present",
-      description: "Leading not-for-profit initiative transforming government classrooms in Pakistan through AI-powered, mastery-based learning.",
+      description: "Co-founded education non-profit named after the Urdu word my father taught me—'Izteraab'—meaning restless curiosity to mend gaps. Leading initiative to transform government classrooms in Pakistan through AI-powered, mastery-based learning, bringing the flipped classroom model I pioneered to underserved communities.",
       link: "https://izteraab.org",
       highlights: [
         "Partnering with Khan Academy's Khanmigo for personalized learning",
@@ -230,7 +231,7 @@ export default function Projects() {
       title: "President, NYUAD Mathematics Society",
       role: "Student Leadership",
       period: "Jun 2022 - Jun 2023",
-      description: "Led NYUAD's Mathematics Society, managing recruitment, organizing events and workshops, running the peer tutoring center, and coaching students for the International Mathematics Competition.",
+      description: "Led NYUAD's Mathematics Society for a campus of 2,100+ students from 125+ countries. Managed recruitment, organized mathematical events and workshops, oversaw the peer tutoring center, and coached students for the International Mathematics Competition.",
       highlights: [
         "Built a community where problem-solving was celebrated",
         "Organized workshops and mathematical events for 2,100+ student campus",
@@ -241,7 +242,7 @@ export default function Projects() {
       title: "Schoolhouse.world",
       role: "Founding Tutor & Project Manager",
       period: "Jun 2020 - Present",
-      description: "Selected among first 20 tutors on Sal Khan's free tutoring platform. Tutored 100+ students globally in 50+ sessions.",
+      description: "Selected as one of the first 20 tutors on Sal Khan's free peer-to-peer tutoring platform during COVID-19. Had the surreal experience of sharing ideas in early team meetings with Sal Khan himself—the same person whose videos taught me calculus. Tutored 100+ students globally across 50+ sessions.",
       link: "https://schoolhouse.world",
       highlights: [
         "Shared ideas with Sal Khan in early team meetings",
@@ -253,7 +254,7 @@ export default function Projects() {
       title: "PrepLion",
       role: "Founder",
       period: "Apr 2020 - Jan 2022",
-      description: "Built tutoring business via YouTube/Instagram teaching SAT Math and Olympiad Geometry to 100+ students across Pakistan.",
+      description: "Founded and built tutoring business during gap year, creating educational content on YouTube and Instagram that reached 3,500+ followers. Taught SAT Math and Olympiad Geometry to 100+ students across Pakistan through online group classes.",
       links: [
         { label: "YouTube Channel", url: "https://www.youtube.com/channel/UC_P7CWHQU4i8XImSoBLz1SA" },
         { label: "Instagram Page", url: "https://www.instagram.com/preplion" },
@@ -307,6 +308,17 @@ export default function Projects() {
                     <p className="text-white/70 leading-relaxed mb-6">
                       {item.description}
                     </p>
+
+                    {item.imageUrl && (
+                      <div className="mb-6">
+                        <img 
+                          src={item.imageUrl} 
+                          alt={item.title} 
+                          className="w-full border-2 border-white/10 rounded"
+                        />
+                      </div>
+                    )}
+
                     <div className="space-y-2">
                       {item.highlights.map((highlight, j) => (
                         <div key={j} className="flex items-start gap-3">
@@ -379,8 +391,18 @@ export default function Projects() {
                       <p className="text-white/70 leading-relaxed mb-6">
                         {item.description}
                       </p>
-                    </div>
-                    <div className="flex gap-3 flex-shrink-0">
+
+                      {item.imageUrl && (
+                        <div className="mb-6">
+                          <img 
+                            src={item.imageUrl} 
+                            alt={item.title} 
+                            className="w-full max-w-2xl border-2 border-white/10 rounded"
+                          />
+                        </div>
+                      )}
+                      </div>
+                      <div className="flex gap-3 flex-shrink-0">
                       {item.link && (
                         <a 
                           href={item.link}
@@ -478,6 +500,17 @@ export default function Projects() {
                   {item.title}
                 </h3>
                 <p className="text-[#4ECDC4] text-sm mb-4 font-mono">{item.org}</p>
+                {item.link && (
+                  <a 
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-[#FF6B35] hover:text-white transition-colors text-xs font-mono mb-3"
+                  >
+                    <ExternalLink className="w-3 h-3" />
+                    COURSE_INFO
+                  </a>
+                )}
                 <p className="text-white/70 leading-relaxed text-sm">
                   {item.description}
                 </p>
