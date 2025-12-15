@@ -309,16 +309,6 @@ export default function Projects() {
                       {item.description}
                     </p>
 
-                    {item.imageUrl && (
-                      <div className="mb-6">
-                        <img 
-                          src={item.imageUrl} 
-                          alt={item.title} 
-                          className="w-full border-2 border-white/10 rounded"
-                        />
-                      </div>
-                    )}
-
                     <div className="space-y-2">
                       {item.highlights.map((highlight, j) => (
                         <div key={j} className="flex items-start gap-3">
