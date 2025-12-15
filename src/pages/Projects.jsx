@@ -102,6 +102,7 @@ export default function Projects() {
       tags: ["OpenAI Assistants", "Next.js", "Supabase", "MongoDB"],
       link: "https://math-confidence.com",
       github: "https://github.com/shayanahmad7/math-confidence",
+      videoUrl: "https://www.loom.com/embed/c0632b215df245fb88117c16df780df1",
       features: [
         "Converted McGraw-Hill's Pre-Algebra DeMYSTiFieD into interactive eBook",
         "Dynamic quizzes with hints instead of solutions",
@@ -117,6 +118,7 @@ export default function Projects() {
       tags: ["GPT-4o", "Whisper", "p5.js", "GCP"],
       link: "https://drawexplain.com",
       github: "https://github.com/shayanahmad7/drawexplain",
+      videoUrl: "https://www.loom.com/embed/eaa97be657c649f0be08b3e26b39f6f5",
       features: [
         "Interactive p5.js canvas for mathematical solutions",
         "OpenAI Whisper for audio transcription of verbal reasoning",
@@ -353,22 +355,38 @@ export default function Projects() {
                           <Github className="w-6 h-6" />
                         </a>
                       )}
-                    </div>
-                  </div>
-
-                  {item.features && (
-                    <div className="mb-6">
-                      <div className="text-white/40 font-mono text-xs mb-3">KEY_FEATURES:</div>
-                      <div className="grid md:grid-cols-2 gap-3">
-                        {item.features.map((feature, j) => (
-                          <div key={j} className="flex items-start gap-2">
-                            <div className="w-1 h-1 bg-[#FFB800] mt-2 flex-shrink-0" />
-                            <p className="text-white/60 text-sm">{feature}</p>
-                          </div>
-                        ))}
                       </div>
-                    </div>
-                  )}
+                      </div>
+
+                      {item.videoUrl && (
+                        <div className="mb-6">
+                          <div className="text-white/40 font-mono text-xs mb-3">DEMO_VIDEO:</div>
+                          <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+                            <iframe
+                              src={item.videoUrl}
+                              className="absolute top-0 left-0 w-full h-full border-2 border-white/10"
+                              frameBorder="0"
+                              allowFullScreen
+                              webkitallowfullscreen="true"
+                              mozallowfullscreen="true"
+                            />
+                          </div>
+                        </div>
+                      )}
+
+                      {item.features && (
+                        <div className="mb-6">
+                          <div className="text-white/40 font-mono text-xs mb-3">KEY_FEATURES:</div>
+                          <div className="grid md:grid-cols-2 gap-3">
+                            {item.features.map((feature, j) => (
+                              <div key={j} className="flex items-start gap-2">
+                                <div className="w-1 h-1 bg-[#FFB800] mt-2 flex-shrink-0" />
+                                <p className="text-white/60 text-sm">{feature}</p>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
 
                   <div className="flex flex-wrap gap-2">
                     {item.tags.map((tag, j) => (
