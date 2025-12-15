@@ -178,22 +178,34 @@ export default function Projects() {
 
   const honors = [
     {
-      title: "International Math Competition 2024",
+      title: "Tamayyuz (Excellence) Research Fellowship",
+      award: "NYU Abu Dhabi",
+      description: "Awarded NYUAD's competitive Tamayyuz (Excellence) Research Fellowship for graduating seniors that builds advanced research skills through full-time faculty supervised work and structured mentorship, preparing fellows for graduate study while contributing to the growing research landscape in the UAE.",
+      period: "Apr 2025"
+    },
+    {
+      title: "Graduate Admissions to Top EdTech Programs",
+      award: "6 Selective Programs",
+      description: "Admitted to Stanford LDT, Harvard LDIT, Columbia Instructional Technology & Media, NYU Steinhardt Learning & Teaching with Educational Technology, and Vanderbilt International Education Policy & Management with Data Science. Awarded full-ride scholarship to Brown's MAT in Mathematics, affirming aptitude for graduate study and research in education and AI-enhanced learning.",
+      period: "Apr 2025"
+    },
+    {
+      title: "International Mathematics Competition 2024",
       award: "Honorable Mention",
-      description: "NYU Abu Dhabi team member. Scored 32 points (33 for Bronze medal).",
+      description: "Selected as 1 of 5 students to represent NYU Abu Dhabi at the International Mathematics Competition in Bulgaria, a top global university math contest with participants from 200+ institutions from 50+ countries. Earned an Honorable Mention scoring 32 points, one below the Bronze medal cutoff.",
       period: "Aug 2024"
     },
     {
-      title: "International Math Olympiad 2021",
-      award: "National Team Member",
-      description: "Selected as one of six members of Pakistan National Math Team.",
-      period: "Jul 2021"
+      title: "President, NYUAD Mathematics Society",
+      award: "Student Leadership",
+      description: "Led NYUAD's Mathematics Society, managing recruitment, organizing events and workshops, running the peer tutoring center, and coaching students for the International Mathematics Competition. Built a community where problem-solving was celebrated.",
+      period: "Jun 2022 - Jun 2023"
     },
     {
-      title: "President, NYUAD Mathematics Society",
-      award: "Leadership Role",
-      description: "Managed recruitment, events, peer tutoring center, and IMC coaching.",
-      period: "Jun 2022 - Jun 2023"
+      title: "Pakistan Team, International Mathematical Olympiad 2021",
+      award: "National Team Member",
+      description: "Selected as 1 of 6 participants nationwide after multi-round qualifiers and national camps to represent Pakistan at the International Mathematical Olympiad, widely regarded as the world's most prestigious mathematics competition, with participants from 100+ countries.",
+      period: "Jul 2021"
     }
   ];
 
