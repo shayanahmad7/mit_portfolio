@@ -157,7 +157,8 @@ export default function Projects() {
       title: "Teaching Assistant",
       org: "NYU Wagner: 'What Really Matters: Leadership with no Regrets'",
       period: "Aug - Dec 2024",
-      description: "Supported course delivery for Professor John Sexton's leadership seminar for 25 graduate students at NYU Wagner School of Public Service. Evaluated weekly reflective papers and video submissions analyzing ethical leadership dilemmas. Provided detailed feedback on students' application of course concepts to real-world scenarios. Computed final grades and maintained grade records. Facilitated communication between students and professor."
+      description: "Supported course delivery for Imam Khalid Latif and Yael Shy's leadership seminar for 25 graduate students at NYU Wagner School of Public Service. Evaluated weekly reflective papers and video submissions analyzing ethical leadership dilemmas. Provided detailed feedback on students' application of course concepts to real-world scenarios. Computed final grades and maintained grade records. Facilitated communication between students and instructors.",
+      link: "https://wagner.nyu.edu/education/courses/what-really-matters-leadership-no-regrets"
     },
     {
       title: "Mathematics Peer Tutor",
