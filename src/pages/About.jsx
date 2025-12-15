@@ -312,7 +312,7 @@ export default function About() {
                 <p className="text-white/70 leading-relaxed">{value.description}</p>
               </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -353,7 +353,7 @@ export default function About() {
                 </div>
               </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </section>
 
