@@ -39,8 +39,8 @@ export default function About() {
     {
       year: "2024-25",
       title: "Building & Researching",
-      description: "Created DrawExplain.com and Math-Confidence.com. Led research on AI-enhanced flipped classrooms at NYUAD. Applied to Stanford LDT and Harvard LDIT — accepted to both with full funding offers.",
-      highlight: "Stanford LDT, Harvard LDIT admits",
+      description: "Created DrawExplain.com and Math-Confidence.com. Led research on AI-enhanced flipped classrooms at NYUAD. Applied to multiple graduate programs: accepted to Stanford LDT, Harvard LDIT, Columbia Instructional Technology, Vanderbilt MIDTE, NYU Steinhardt LTXD, and Brown MAT Mathematics (full scholarship).",
+      highlight: "Graduate Program Admissions",
       color: "#EC4899"
     },
     {
