@@ -60,7 +60,8 @@ export default function Projects() {
         "Pioneered vision of AI-augmented textbooks with world-renowned CS educators"
       ],
       link: "https://computer-networking-assistant.vercel.app/",
-      github: "https://github.com/shayanahmad7/computer-networking-assistant"
+      github: "https://github.com/shayanahmad7/computer-networking-assistant",
+      imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6936af0265452204c9f22c57/0b212addc_image.png"
     },
     {
       title: "AI Research Assistant",
