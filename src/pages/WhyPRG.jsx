@@ -112,13 +112,7 @@ export default function WhyPRG() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-                whileHover={{ 
-                  scale: 1.01,
-                  y: -3,
-                  borderColor: 'rgba(255,255,255,0.3)',
-                  transition: { duration: 0.2 }
-                }}
+                transition={{ delay: i * 0.1 }}
               >
                 <div className="grid md:grid-cols-12">
                   {/* PRG Theme */}
@@ -203,12 +197,7 @@ export default function WhyPRG() {
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-                whileHover={{ 
-                  x: 8,
-                  borderLeftColor: '#4ECDC4',
-                  transition: { duration: 0.2 }
-                }}
+                transition={{ delay: i * 0.1 }}
               >
                 <div className="flex items-start gap-6">
                   <div className="text-5xl font-black text-white/10 group-hover:text-white/20 transition-opacity flex-shrink-0">

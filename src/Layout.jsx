@@ -1,17 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function Layout({ children, currentPageName }) {
+export default function Layout({ children }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
-
-  // Smooth scroll behavior
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, [location.pathname]);
 
   const navItems = [
     { name: 'HOME', page: 'Home' },
@@ -114,22 +109,9 @@ export default function Layout({ children, currentPageName }) {
         )}
       </AnimatePresence>
 
-      {/* Main Content with Page Transitions */}
+      {/* Main Content */}
       <main className="lg:pt-20">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={location.pathname}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ 
-              duration: 0.4,
-              ease: [0.43, 0.13, 0.23, 0.96]
-            }}
-          >
-            {children}
-          </motion.div>
-        </AnimatePresence>
+        {children}
       </main>
     </div>
   );
