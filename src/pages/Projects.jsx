@@ -231,7 +231,7 @@ export default function Projects() {
       title: "Schoolhouse.world",
       role: "Founding Tutor & Project Manager",
       period: "Jun 2020 - Present",
-      description: "When Sal Khan launched the free online tutoring platform Schoolhouse.world that same summer in 2020, I was selected to be one of the first 20 tutors. Meeting Sal himself in a team-meeting to discuss ideas was a really surreal experience. Sal loved my vision of eventually turning Schoolhouse into a structured, cohort-based online school for students without access to formal education instead of just after school help. I'm now acting on that vision with a pilot project for migrant children in Greece inspired by research during my summer course this year. To overcome the language barrier they face in Greek schools, we'll connect students to Schoolhouse's multilingual tutors for structured online sessions for a few months, partnering with a local NGO for tech support. The project aims to showcase the potential of online volunteer-based education to transform access for underserved communities globally.",
+      description: "Selected among first 20 tutors on Sal Khan's free tutoring platform. Tutored 100+ students globally in 50+ sessions.",
       link: "https://schoolhouse.world",
       highlights: [
         "Shared ideas with Sal Khan in early team meetings",
