@@ -116,16 +116,39 @@ export default function About() {
               transition={{ duration: 0.6 }}
             >
               <div className="relative">
-                <div className="absolute -inset-4 bg-[#FF6B35] opacity-20 blur-2xl" />
-                <img 
-                  src={profileImageUrl}
-                  alt="Shayan Ahmad"
-                  className="relative w-full max-w-md mx-auto border-4 border-[#4ECDC4] shadow-2xl"
-                  style={{
-                    clipPath: 'polygon(0% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%)'
-                  }}
-                />
-                <div className="absolute bottom-0 right-0 w-20 h-20 bg-[#FFB800]" />
+                <motion.div 
+                    className="absolute -inset-4 bg-[#FF6B35] opacity-20 blur-2xl"
+                    animate={{
+                      scale: [1, 1.1, 1],
+                      opacity: [0.2, 0.3, 0.2]
+                    }}
+                    transition={{
+                      duration: 4,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                  />
+                  <motion.img 
+                    src={profileImageUrl}
+                    alt="Shayan Ahmad"
+                    className="relative w-full max-w-md mx-auto border-4 border-[#4ECDC4] shadow-2xl"
+                    style={{
+                      clipPath: 'polygon(0% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%)'
+                    }}
+                    whileHover={{ scale: 1.02 }}
+                    transition={{ duration: 0.3 }}
+                  />
+                  <motion.div 
+                    className="absolute bottom-0 right-0 w-20 h-20 bg-[#FFB800]"
+                    animate={{
+                      rotate: [0, 5, 0, -5, 0],
+                    }}
+                    transition={{
+                      duration: 6,
+                      repeat: Infinity,
+                      ease: "easeInOut"
+                    }}
+                  />
               </div>
             </motion.div>
           </div>
