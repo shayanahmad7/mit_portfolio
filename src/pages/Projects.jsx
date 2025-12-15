@@ -244,11 +244,16 @@ export default function Projects() {
       role: "Founder",
       period: "Apr 2020 - Jan 2022",
       description: "Built tutoring business via YouTube/Instagram teaching SAT Math and Olympiad Geometry to 100+ students across Pakistan.",
-      link: "https://instagram.com/preplion",
+      links: [
+        { label: "YouTube Channel", url: "https://www.youtube.com/channel/UC_P7CWHQU4i8XImSoBLz1SA" },
+        { label: "Instagram Page", url: "https://www.instagram.com/preplion" },
+        { label: "Olympiad Geometry Course", url: "https://docs.google.com/document/d/1iSQJepuxgQXdVlQn91JACVdr33qQ9L43bzEKtb6_G2U/edit?usp=sharing" },
+        { label: "SAT Prep Course", url: "https://docs.google.com/document/d/1dfLF3n7dwO4c5R_YUtfCw8TjEJRh8VLhTiTxCBX1FcU/edit?usp=sharing" }
+      ],
       highlights: [
-        "Led group classes of 20+ students",
-        "Free Olympiad training; several students advanced to Pakistan IMO team",
-        "Created educational content on YouTube channel"
+        "Created educational videos on SAT Math and Olympiad Geometry for YouTube and Instagram",
+        "Managed and taught multiple classes of 20+ students, providing tailored instruction",
+        "Conducted free Olympiad Geometry training for aspiring IMO participants; many joined Pakistan national team"
       ]
     }
   ];
@@ -535,6 +540,22 @@ export default function Projects() {
                       >
                         <ExternalLink className="w-6 h-6" />
                       </a>
+                    )}
+                    {item.links && (
+                      <div className="flex flex-wrap gap-2 mt-4">
+                        {item.links.map((link, idx) => (
+                          <a
+                            key={idx}
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#4ECDC4]/10 border border-[#4ECDC4]/30 hover:bg-[#4ECDC4] hover:text-black text-white text-xs font-mono transition-all"
+                          >
+                            <ExternalLink className="w-3 h-3" />
+                            {link.label}
+                          </a>
+                        ))}
+                      </div>
                     )}
                   </div>
                 </div>
