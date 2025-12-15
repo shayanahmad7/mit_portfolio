@@ -313,10 +313,10 @@ export default function Projects() {
                 </div>
               </motion.div>
             ))}
-          </div>
-        );
+            </motion.div>
+            );
 
-      case 'technical':
+            case 'technical':
         return (
           <motion.div 
             className="space-y-8"
@@ -545,7 +545,7 @@ export default function Projects() {
                 </div>
               </motion.div>
             ))}
-          </div>
+          </motion.div>
         );
 
       default:
