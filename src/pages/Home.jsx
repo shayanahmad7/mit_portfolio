@@ -560,30 +560,9 @@ export default function Home() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
             >
-              <div className="bg-black border-4 border-[#4ECDC4] p-8 relative">
-                <div className="absolute -top-4 -right-4 w-32 h-32 bg-[#FF6B35]" style={{ clipPath: 'polygon(100% 0, 100% 100%, 0 100%)' }} />
-                
-                <div className="space-y-6 relative z-10">
-                  <div>
-                    <div className="text-5xl font-black text-[#4ECDC4] mb-2">5+</div>
-                    <div className="text-white/60 text-sm">Research Projects</div>
-                  </div>
-                  <div className="h-px bg-white/10" />
-                  <div>
-                    <div className="text-5xl font-black text-[#FF6B35] mb-2">1000s</div>
-                    <div className="text-white/60 text-sm">Users Reached</div>
-                  </div>
-                  <div className="h-px bg-white/10" />
-                  <div>
-                    <div className="text-5xl font-black text-[#FFB800] mb-2">4</div>
-                    <div className="text-white/60 text-sm">Years of Teaching</div>
-                  </div>
-                </div>
-              </div>
-
               <Link 
                 to={createPageUrl("WhyPRG")}
-                className="block mt-6 px-8 py-4 bg-black border-2 border-black hover:border-[#FF6B35] text-white font-bold text-center transition-all group"
+                className="block px-8 py-4 bg-black border-2 border-black hover:border-[#FF6B35] text-white font-bold text-center transition-all group"
               >
                 FULL RESEARCH FIT
                 <ChevronRight className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />

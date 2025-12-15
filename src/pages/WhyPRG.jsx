@@ -164,7 +164,7 @@ export default function WhyPRG() {
               </p>
               
               <p>
-                My AI tutors serve <span className="text-[#4ECDC4] font-black">100,000+ students</span>. My research runs in real classrooms. I've founded a non-profit while pursuing research.
+                My AI tutors serve <span className="text-[#4ECDC4] font-black">thousands of students</span>. My research runs in real classrooms. I've founded a non-profit while pursuing research.
               </p>
 
               <p className="text-xl font-bold">
