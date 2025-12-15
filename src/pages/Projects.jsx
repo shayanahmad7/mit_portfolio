@@ -236,7 +236,13 @@ export default function Projects() {
     switch(activeTab) {
       case 'research':
         return (
-          <div className="space-y-8">
+          <motion.div 
+            className="space-y-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
             {research.map((item, i) => (
               <motion.div
                 key={i}
@@ -244,7 +250,12 @@ export default function Projects() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: i * 0.08 }}
+                whileHover={{ 
+                  scale: 1.01,
+                  borderColor: '#4ECDC4',
+                  transition: { duration: 0.2 }
+                }}
               >
                 <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-6">
                   <div className="flex-1">
@@ -307,7 +318,13 @@ export default function Projects() {
 
       case 'technical':
         return (
-          <div className="space-y-8">
+          <motion.div 
+            className="space-y-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
             {technical.map((item, i) => (
               <motion.div
                 key={i}
@@ -315,7 +332,12 @@ export default function Projects() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: i * 0.08 }}
+                whileHover={{ 
+                  scale: 1.01,
+                  y: -5,
+                  transition: { duration: 0.2 }
+                }}
               >
                 <div className="p-8 md:p-12">
                   <div className="flex items-start justify-between gap-6 mb-6">
@@ -379,13 +401,19 @@ export default function Projects() {
                   </div>
                 </div>
               </motion.div>
-            ))}
-          </div>
-        );
+              ))}
+              </motion.div>
+              );
 
-      case 'teaching':
-        return (
-          <div className="grid md:grid-cols-2 gap-6">
+              case 'teaching':
+              return (
+              <motion.div 
+              className="grid md:grid-cols-2 gap-6"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.3 }}
+              >
             {teaching.map((item, i) => (
               <motion.div
                 key={i}
@@ -393,7 +421,12 @@ export default function Projects() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: i * 0.08 }}
+                whileHover={{ 
+                  x: 5,
+                  borderLeftColor: '#4ECDC4',
+                  transition: { duration: 0.2 }
+                }}
               >
                 <div className="text-[#FFB800] font-mono text-xs mb-2">{item.period}</div>
                 <h3 className="text-xl font-black text-white mb-1">
@@ -405,12 +438,18 @@ export default function Projects() {
                 </p>
               </motion.div>
             ))}
-          </div>
-        );
+            </motion.div>
+            );
 
-      case 'honors':
-        return (
-          <div className="space-y-6">
+            case 'honors':
+            return (
+            <motion.div 
+            className="space-y-6"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            >
             {honors.map((item, i) => (
               <motion.div
                 key={i}
@@ -418,7 +457,13 @@ export default function Projects() {
                 initial={{ opacity: 0, x: -30 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: i * 0.08 }}
+                whileHover={{ 
+                  x: 5,
+                  scale: 1.01,
+                  borderColor: '#FFB800',
+                  transition: { duration: 0.2 }
+                }}
               >
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-4">
                   <div>
@@ -436,12 +481,18 @@ export default function Projects() {
                 </p>
               </motion.div>
             ))}
-          </div>
-        );
+            </motion.div>
+            );
 
-      case 'volunteer':
-        return (
-          <div className="space-y-8">
+            case 'volunteer':
+            return (
+            <motion.div 
+            className="space-y-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+            >
             {volunteer.map((item, i) => (
               <motion.div
                 key={i}
@@ -449,7 +500,12 @@ export default function Projects() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                transition={{ delay: i * 0.08 }}
+                whileHover={{ 
+                  scale: 1.01,
+                  borderColor: '#4ECDC4',
+                  transition: { duration: 0.2 }
+                }}
               >
                 <div className="p-8 md:p-12">
                   <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6 mb-6">

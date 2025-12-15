@@ -7,6 +7,25 @@ import { createPageUrl } from '@/utils';
 const profileImageUrl = "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_68ece077245b833bff0195c7/aba735dd1_Shayan_Linkedin_Picture.jpg";
 
 export default function About() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, x: -20 },
+    visible: { 
+      opacity: 1, 
+      x: 0,
+      transition: { duration: 0.5 }
+    }
+  };
+
   const timeline = [
     {
       year: "2020",
@@ -201,15 +220,19 @@ export default function About() {
             </h2>
           </div>
 
-          <div className="space-y-2">
+          <motion.div 
+            className="space-y-2"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
             {timeline.map((item, i) => (
               <motion.div
                 key={i}
                 className="group"
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: i * 0.1 }}
+                variants={itemVariants}
+                whileHover={{ x: 10, transition: { duration: 0.2 } }}
               >
                 <div className="bg-black border-l-4 p-6 md:p-8 hover:border-white transition-all cursor-pointer" style={{ borderColor: item.color }}>
                   <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
@@ -248,7 +271,13 @@ export default function About() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <motion.div 
+            className="grid md:grid-cols-3 gap-6"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
             {[
               {
                 title: "Growth Mindset",
@@ -268,12 +297,14 @@ export default function About() {
             ].map((value, i) => (
               <motion.div
                 key={i}
-                className="bg-black border-t-4 p-8 hover:scale-105 transition-transform"
+                className="bg-black border-t-4 p-8"
                 style={{ borderColor: value.color }}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
+                variants={itemVariants}
+                whileHover={{ 
+                  scale: 1.05, 
+                  y: -5,
+                  transition: { duration: 0.3 }
+                }}
               >
                 <h3 className="text-2xl font-black mb-4" style={{ color: value.color }}>
                   {value.title}
@@ -296,15 +327,23 @@ export default function About() {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4">
+          <motion.div 
+            className="grid md:grid-cols-2 gap-4"
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+          >
             {funFacts.map((fact, i) => (
               <motion.div
                 key={i}
                 className="bg-black border-2 border-white/10 p-6 hover:border-[#4ECDC4] transition-all group"
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.05 }}
+                variants={itemVariants}
+                whileHover={{ 
+                  x: 5,
+                  borderColor: '#4ECDC4',
+                  transition: { duration: 0.2 }
+                }}
               >
                 <div className="flex items-start gap-4">
                   <div className="text-3xl font-black text-[#FF6B35] opacity-20 group-hover:opacity-40 transition-opacity flex-shrink-0">

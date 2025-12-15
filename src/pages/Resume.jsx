@@ -199,7 +199,14 @@ function Section({ title, color, children }) {
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
+      transition={{ 
+        duration: 0.5,
+        ease: [0.43, 0.13, 0.23, 0.96]
+      }}
+      whileHover={{
+        x: 5,
+        transition: { duration: 0.2 }
+      }}
     >
       <div className="flex items-center gap-4 mb-6">
         <div className="w-2 h-2" style={{ backgroundColor: color }} />
