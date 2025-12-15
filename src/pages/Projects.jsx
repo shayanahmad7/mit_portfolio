@@ -157,31 +157,31 @@ export default function Projects() {
       title: "Teaching Assistant",
       org: "NYU Wagner: 'What Really Matters: Leadership with no Regrets'",
       period: "Aug - Dec 2024",
-      description: "Supported course delivery for 25 students. Evaluated weekly papers/video reflections, computed final grades."
+      description: "Supported course delivery for Professor John Sexton's leadership seminar for 25 graduate students at NYU Wagner School of Public Service. Evaluated weekly reflective papers and video submissions analyzing ethical leadership dilemmas. Provided detailed feedback on students' application of course concepts to real-world scenarios. Computed final grades and maintained grade records. Facilitated communication between students and professor."
     },
     {
       title: "Mathematics Peer Tutor",
       org: "NYU Tandon TRIO Scholars Program",
       period: "Aug - Dec 2024",
-      description: "Comprehensive tutoring for Precalculus and Calculus (1, 2, 3). Weekly one-on-one sessions with progress tracking."
+      description: "Provided comprehensive one-on-one tutoring for first-generation and underrepresented STEM students in Precalculus and Calculus (1, 2, 3). Developed personalized study plans addressing individual learning gaps. Weekly sessions focused on building mathematical confidence and problem-solving skills. Tracked progress through regular assessments and adjusted teaching approaches based on student needs."
     },
     {
       title: "Mathematics Tutor",
       org: "LessonPal, Valdo Academics, Russian Math Tutors",
       period: "Oct 2022 - Present",
-      description: "200+ online sessions for competitive mathematics (MOEMS, AMC, AIME, IMO), SAT prep, and high school math."
+      description: "Conducted 200+ online tutoring sessions across three platforms, specializing in competitive mathematics preparation (Math Olympiads: MOEMS, AMC 8/10/12, AIME, IMO qualifiers) and standardized test prep (SAT Math, AP Calculus). Developed custom problem sets targeting specific competition strategies. Maintained consistent 5-star ratings across all platforms. Students achieved significant score improvements and competition placements."
     },
     {
       title: "Mathematics Peer Tutor",
       org: "NYUAD Academic Resource Center",
       period: "Oct 2022 - Jun 2023",
-      description: "150 sessions for students struggling with Calculus, Discrete Mathematics, and Linear Algebra."
+      description: "Delivered 150 individual and group tutoring sessions for undergraduate students struggling with Calculus I/II, Discrete Mathematics, and Linear Algebra. Identified common conceptual gaps and developed targeted intervention strategies. Held regular office hours and created supplementary practice materials. Collaborated with course instructors to align tutoring with course objectives. Many students improved from failing to passing grades."
     },
     {
       title: "Mathematics Teacher (Grades 4-8)",
       org: "Alma Mater School, Lahore, Pakistan",
       period: "Jun - Nov 2020",
-      description: "Implemented flipped classroom using Khan Academy. Advanced 4th graders to Algebra ahead of schedule. Regular growth mindset sessions."
+      description: "This transformative experience during my gap year shaped my entire educational philosophy. Taught mathematics to 100+ students across grades 4-8, where I encountered Hana—a student who believed she 'couldn't do math.' When traditional methods failed, I discovered she lacked foundational number sense, not intelligence. Implemented video-based flipped classroom model using Khan Academy, allowing students to learn at their own pace with in-class time focused on collaborative problem-solving. Organized peer-learning groups where stronger students taught struggling peers, reinforcing both groups' understanding. Led daily growth mindset sessions where students shouted together: 'I CAN LEARN ANYTHING!' Advanced my 4th-grade class to algebraic thinking ahead of the traditional curriculum timeline. The moment Hana finally grasped multiplication after mastering prerequisites was my epiphany about the power of mastery-based learning—every student can learn, they just need the right support at the right time. This experience convinced me to dedicate my life to building educational tools that scale this personalized approach globally."
     }
   ];
 
