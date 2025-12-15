@@ -17,7 +17,7 @@ export default function Projects() {
 
   const research = [
     {
-      title: "Tamayyuz (Excellence) Research Fellow",
+      title: "Tamayyuz (Excellence) Research Fellow, AI in Education",
       org: "Hilary Ballon Center for Teaching & Learning, NYUAD",
       period: "Sept 2025 - Present",
       description: "As a Tamayyuz Research Fellow, I'm extending my work from Summer 2025 into a full-scale mixed-methods study. Building on the pilot's success, I'm now designing a rigorous controlled experiment for Spring 2026: one section will follow the traditional lecture-based model, while another implements our AI-enhanced flipped classroom framework (AIIALP). We'll measure improvements in learning outcomes, student perceptions, and engagement patterns across 70+ students. I'm developing instructor dashboards within NYUAD's OpenWebUI platform (PilotGenAI) that track mastery of learning outcomes in real-time by analyzing student interactions with our 32 section-specific AI tutors. These dashboards surface insights about which concepts students struggle with, enabling just-in-time teaching interventions. We're preparing a paper for IJETHE (International Journal of Educational Technology in Higher Education) on our findings. Beyond research, I lead workshops training NYUAD faculty on AI literacy, ethical integration, and pedagogy redesign—helping instructors rethink assessment strategies and leverage AI responsibly. I also manage a team of student research assistants, coordinating data collection, analysis, and literature reviews to support our ongoing studies.",
@@ -96,6 +96,7 @@ export default function Projects() {
       description: "My research and building experiences have now converged into a single, integrated platform: an agentic Learning Management System that I'm currently building as my startup. This system empowers teachers to easily create custom AI tutors within a unified learning interface that combines notes, videos, and interactive tools—moving far beyond a simple chatbot. The 'agentic' core is an orchestrating AI that monitors student interactions with modular tutors to track their mastery across learning outcomes. It keeps everyone in the loop, notifying teachers which students need personal, human support while giving students encouraging feedback and guidance. This vision is the culmination of my journey, uniting the modularity of Math-Confidence and the rich assessment models of DrawExplain into one scalable, practical system for real classrooms.",
       tags: ["AI Agents", "LangChain", "Next.js", "MongoDB"],
       link: "https://ai-lms-jet.vercel.app/",
+      imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6936af0265452204c9f22c57/075c932a6_image.png",
       features: [
         "Chapter-aligned autonomous tutors with side-by-side views (notes/slides, videos, practice)",
         "Multi-modal assessment: canvas + screen recording + verbal reasoning with AI feedback",
@@ -157,31 +158,32 @@ export default function Projects() {
       title: "Teaching Assistant",
       org: "NYU Wagner: 'What Really Matters: Leadership with no Regrets'",
       period: "Aug - Dec 2024",
-      description: "Supported course delivery for 25 students. Evaluated weekly papers/video reflections, computed final grades."
+      description: "Supported course delivery for Imam Khalid Latif and Yael Shy's leadership seminar for 25 graduate students at NYU Wagner School of Public Service. Evaluated weekly reflective papers and video submissions analyzing ethical leadership dilemmas. Provided detailed feedback on students' application of course concepts to real-world scenarios. Computed final grades and maintained grade records. Facilitated communication between students and instructors.",
+      link: "https://wagner.nyu.edu/education/courses/what-really-matters-leadership-no-regrets"
     },
     {
       title: "Mathematics Peer Tutor",
       org: "NYU Tandon TRIO Scholars Program",
       period: "Aug - Dec 2024",
-      description: "Comprehensive tutoring for Precalculus and Calculus (1, 2, 3). Weekly one-on-one sessions with progress tracking."
+      description: "Provided comprehensive one-on-one tutoring for first-generation and underrepresented STEM students in Precalculus and Calculus (1, 2, 3). Developed personalized study plans addressing individual learning gaps. Weekly sessions focused on building mathematical confidence and problem-solving skills. Tracked progress through regular assessments and adjusted teaching approaches based on student needs."
     },
     {
       title: "Mathematics Tutor",
       org: "LessonPal, Valdo Academics, Russian Math Tutors",
       period: "Oct 2022 - Present",
-      description: "200+ online sessions for competitive mathematics (MOEMS, AMC, AIME, IMO), SAT prep, and high school math."
+      description: "Conducted 200+ online tutoring sessions across three platforms, specializing in competitive mathematics preparation (Math Olympiads: MOEMS, AMC 8/10/12, AIME, IMO qualifiers) and standardized test prep (SAT Math, AP Calculus). Developed custom problem sets targeting specific competition strategies. Maintained consistent 5-star ratings across all platforms. Students achieved significant score improvements and competition placements."
     },
     {
       title: "Mathematics Peer Tutor",
       org: "NYUAD Academic Resource Center",
       period: "Oct 2022 - Jun 2023",
-      description: "150 sessions for students struggling with Calculus, Discrete Mathematics, and Linear Algebra."
+      description: "Helped Professor Hisham Sati set up NYUAD's Academic Resource Center at its inception. Delivered 150 individual and group tutoring sessions for undergraduate students struggling with Calculus I/II, Discrete Mathematics, and Linear Algebra. Identified common conceptual gaps and developed targeted intervention strategies. Held regular office hours and created supplementary practice materials. Collaborated with course instructors to align tutoring with course objectives. Many students improved from failing to passing grades."
     },
     {
       title: "Mathematics Teacher (Grades 4-8)",
       org: "Alma Mater School, Lahore, Pakistan",
       period: "Jun - Nov 2020",
-      description: "Implemented flipped classroom using Khan Academy. Advanced 4th graders to Algebra ahead of schedule. Regular growth mindset sessions."
+      description: "This transformative experience during my gap year shaped my entire educational philosophy. Implemented video-based flipped classroom model using Khan Academy, freeing up space for everyone to learn at their own pace—struggling students could go all the way back to kindergarten-level content while advanced students pushed ahead. In-class time became collaborative problem-solving and peer support. Organized peer-learning groups where stronger students taught struggling peers. Led daily growth mindset sessions where students shouted together: 'I CAN LEARN ANYTHING!' One of my 4th-graders was able to keep advancing and reached algebraic thinking ahead of schedule. This experience crystallized my belief in mastery-based learning and convinced me to dedicate my life to building educational tools that scale this personalized approach globally."
     }
   ];
 
@@ -217,7 +219,7 @@ export default function Projects() {
       title: "Izteraab.org",
       role: "Co-Founder",
       period: "Aug 2025 - Present",
-      description: "Leading not-for-profit initiative transforming government classrooms in Pakistan through AI-powered, mastery-based learning.",
+      description: "Co-founded education non-profit named after the Urdu word my father taught me—'Izteraab'—meaning restless curiosity to mend gaps. Leading initiative to transform government classrooms in Pakistan through AI-powered, mastery-based learning, bringing the flipped classroom model I pioneered to underserved communities.",
       link: "https://izteraab.org",
       highlights: [
         "Partnering with Khan Academy's Khanmigo for personalized learning",
@@ -229,7 +231,7 @@ export default function Projects() {
       title: "President, NYUAD Mathematics Society",
       role: "Student Leadership",
       period: "Jun 2022 - Jun 2023",
-      description: "Led NYUAD's Mathematics Society, managing recruitment, organizing events and workshops, running the peer tutoring center, and coaching students for the International Mathematics Competition.",
+      description: "Led NYUAD's Mathematics Society for a campus of 2,100+ students from 125+ countries. Managed recruitment, organized mathematical events and workshops, oversaw the peer tutoring center, and coached students for the International Mathematics Competition.",
       highlights: [
         "Built a community where problem-solving was celebrated",
         "Organized workshops and mathematical events for 2,100+ student campus",
@@ -240,7 +242,7 @@ export default function Projects() {
       title: "Schoolhouse.world",
       role: "Founding Tutor & Project Manager",
       period: "Jun 2020 - Present",
-      description: "Selected among first 20 tutors on Sal Khan's free tutoring platform. Tutored 100+ students globally in 50+ sessions.",
+      description: "Selected as one of the first 20 tutors on Sal Khan's free peer-to-peer tutoring platform during COVID-19. Tutored 100+ students globally across 50+ sessions. Had the surreal experience of sharing ideas in early team meetings with Sal Khan himself—the same person whose videos taught me calculus. Sal loved my vision of eventually turning Schoolhouse into a structured, cohort-based online school for students without access to formal education instead of just after-school help. I'm now acting on that vision with a pilot project for migrant children in Greece inspired by research during my summer course this year. To overcome the language barrier they face in Greek schools, we'll connect students to Schoolhouse's multilingual tutors for structured online sessions for a few months, partnering with a local NGO for tech support. The project aims to showcase the potential of online volunteer-based education to transform access for underserved communities globally.",
       link: "https://schoolhouse.world",
       highlights: [
         "Shared ideas with Sal Khan in early team meetings",
@@ -252,7 +254,7 @@ export default function Projects() {
       title: "PrepLion",
       role: "Founder",
       period: "Apr 2020 - Jan 2022",
-      description: "Built tutoring business via YouTube/Instagram teaching SAT Math and Olympiad Geometry to 100+ students across Pakistan.",
+      description: "Founded and built tutoring business during gap year, creating educational content on YouTube and Instagram that reached 3,500+ followers. Taught SAT Math and Olympiad Geometry to 100+ students across Pakistan through online group classes.",
       links: [
         { label: "YouTube Channel", url: "https://www.youtube.com/channel/UC_P7CWHQU4i8XImSoBLz1SA" },
         { label: "Instagram Page", url: "https://www.instagram.com/preplion" },
@@ -306,6 +308,17 @@ export default function Projects() {
                     <p className="text-white/70 leading-relaxed mb-6">
                       {item.description}
                     </p>
+
+                    {item.imageUrl && (
+                      <div className="mb-6">
+                        <img 
+                          src={item.imageUrl} 
+                          alt={item.title} 
+                          className="w-full border-2 border-white/10 rounded"
+                        />
+                      </div>
+                    )}
+
                     <div className="space-y-2">
                       {item.highlights.map((highlight, j) => (
                         <div key={j} className="flex items-start gap-3">
@@ -378,8 +391,18 @@ export default function Projects() {
                       <p className="text-white/70 leading-relaxed mb-6">
                         {item.description}
                       </p>
-                    </div>
-                    <div className="flex gap-3 flex-shrink-0">
+
+                      {item.imageUrl && (
+                        <div className="mb-6">
+                          <img 
+                            src={item.imageUrl} 
+                            alt={item.title} 
+                            className="w-full max-w-2xl border-2 border-white/10 rounded"
+                          />
+                        </div>
+                      )}
+                      </div>
+                      <div className="flex gap-3 flex-shrink-0">
                       {item.link && (
                         <a 
                           href={item.link}
@@ -477,6 +500,17 @@ export default function Projects() {
                   {item.title}
                 </h3>
                 <p className="text-[#4ECDC4] text-sm mb-4 font-mono">{item.org}</p>
+                {item.link && (
+                  <a 
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-[#FF6B35] hover:text-white transition-colors text-xs font-mono mb-3"
+                  >
+                    <ExternalLink className="w-3 h-3" />
+                    COURSE_INFO
+                  </a>
+                )}
                 <p className="text-white/70 leading-relaxed text-sm">
                   {item.description}
                 </p>
