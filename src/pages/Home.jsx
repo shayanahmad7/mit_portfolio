@@ -216,9 +216,6 @@ export default function Home() {
                     clipPath: 'polygon(0% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%)'
                   }}
                 />
-
-                {/* Accent corner */}
-                <div className="absolute bottom-0 right-0 w-24 h-24 bg-[#4ECDC4]" />
               </div>
             </motion.div>
           </div>
