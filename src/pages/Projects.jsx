@@ -231,12 +231,13 @@ export default function Projects() {
       title: "Schoolhouse.world",
       role: "Founding Tutor & Project Manager",
       period: "Jun 2020 - Present",
-      description: "Selected among first 20 tutors on Sal Khan's free tutoring platform. Tutored 100+ students globally in 50+ sessions.",
+      description: "When Sal Khan launched the free online tutoring platform Schoolhouse.world in summer 2020, I was selected to be one of the first 20 tutors. Meeting Sal himself in a team meeting to discuss ideas was a surreal experience. Tutored 100+ students globally in 50+ sessions.",
       link: "https://schoolhouse.world",
       highlights: [
-        "Shared ideas with Sal Khan in early team meetings",
-        "Initiated pilot with ReFocus Media Labs (Athens) for migrant education",
-        "Proposing structured, year-long cohort model for underserved communities"
+        "Sal loved my vision of turning Schoolhouse into a structured, cohort-based online school for students without access to formal education",
+        "Now acting on that vision with a pilot project for migrant children in Greece, inspired by research during my Athens field course",
+        "Connecting students to Schoolhouse's multilingual tutors for structured online sessions to overcome language barriers they face in Greek schools",
+        "Partnering with ReFocus Media Labs (local NGO) for tech support to showcase the potential of volunteer-based education to transform access globally"
       ]
     },
     {
