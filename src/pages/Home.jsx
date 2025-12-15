@@ -301,7 +301,7 @@ export default function Home() {
                   FROM TEACHING<br />
                   <span className="text-[#FF6B35]">HANA</span><br />
                   TO BUILDING AI<br />
-                  FOR MILLIONS
+                  FOR THOUSANDS
                 </h3>
               </motion.div>
 
@@ -331,7 +331,7 @@ export default function Home() {
                 >
                   <div className="text-sm font-mono text-[#4ECDC4]">[ 2020-25 // SCALING ]</div>
                   <p className="text-lg leading-relaxed text-black/80">
-                    As a founding tutor at <span className="font-bold">Schoolhouse.world</span>, I shared ideas with Sal Khan himself. At NYU Abu Dhabi, I merged education with AI, building tools that reached <span className="font-bold text-[#FF6B35]">100,000+ learners</span>.
+                    As a founding tutor at <span className="font-bold">Schoolhouse.world</span>, I shared ideas with Sal Khan himself. At NYU Abu Dhabi, I merged education with AI, building tools that reached <span className="font-bold text-[#FF6B35]">thousands of learners</span>.
                   </p>
                   <p className="text-lg leading-relaxed text-black/80">
                     I call this restless curiosity <span className="italic font-medium">Izteraab</span> — now the name of my education non-profit in Pakistan.
