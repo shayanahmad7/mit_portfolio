@@ -176,86 +176,41 @@ export default function About() {
 
       {/* Hero */}
       <section className="py-20 px-6 bg-gradient-to-br from-[#0a0a0a] to-[#1a1a1a]">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              <div className="text-[#FF6B35] font-mono text-sm mb-4">&gt; ABOUT_ME.txt</div>
-              <h1 className="text-5xl md:text-7xl font-black mb-6">
-                SHAYAN<br />
-                <span className="text-[#4ECDC4]">AHMAD</span>
-              </h1>
+        <div className="max-w-5xl mx-auto text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="text-[#FF6B35] font-mono text-sm mb-4">&gt; ABOUT_ME.txt</div>
+            <h1 className="text-5xl md:text-7xl font-black mb-6">
+              SHAYAN<br />
+              <span className="text-[#4ECDC4]">AHMAD</span>
+            </h1>
 
-              <div className="space-y-4 text-white/70 leading-relaxed text-lg mb-8">
-                <p>
-                  Builder, researcher, and educator passionate about using AI to democratize quality education globally.
-                </p>
-                <p>
-                  My story begins on Thursday evenings, holding my father's hand at <span className="text-white font-medium">Data-Darbar</span>, South Asia's largest Sufi shrine in Lahore. Amidst the crowds, we distributed meals to the homeless. He taught me about a world of inequality just beyond our doorstep.
-                </p>
-                <p>
-                  Those evenings planted a seed of empathy in me—a restless curiosity he called <span className="text-[#FF6B35] font-medium italic">Izteraab</span>—to understand and mend the gaps I saw.
-                </p>
-                <p>
-                  Through my mother, who sat with me daily for homework, I learned discipline. From my father, I learned to apply that diligence to something larger than myself.
-                </p>
-                <p className="text-[#4ECDC4] font-medium">
-                  I was an overthinker child who dreamt of magic wands, blissfully unaware I would one day find a more powerful tool: education.
-                </p>
-              </div>
+            <div className="space-y-4 text-white/70 leading-relaxed text-lg mb-8 max-w-3xl mx-auto">
+              <p>
+                Builder, researcher, and educator passionate about using AI to democratize quality education globally.
+              </p>
+              <p>
+                My story begins on Thursday evenings, holding my father's hand at <span className="text-white font-medium">Data-Darbar</span>, South Asia's largest Sufi shrine in Lahore. Amidst the crowds, we distributed meals to the homeless. He taught me about a world of inequality just beyond our doorstep.
+              </p>
+              <p>
+                Those evenings planted a seed of empathy in me—a restless curiosity he called <span className="text-[#FF6B35] font-medium italic">Izteraab</span>—to understand and mend the gaps I saw.
+              </p>
+              <p>
+                Through my mother, who sat with me daily for homework, I learned discipline. From my father, I learned to apply that diligence to something larger than myself.
+              </p>
+              <p className="text-[#4ECDC4] font-medium">
+                I was an overthinker child who dreamt of magic wands, blissfully unaware I would one day find a more powerful tool: education.
+              </p>
+            </div>
 
-              <div className="flex items-center gap-3 text-white/50 font-mono text-xs">
-                <div className="w-2 h-2 bg-[#4ECDC4] rounded-full animate-pulse" />
-                <span>LAHORE → ABU DHABI → NYC → BOSTON</span>
-              </div>
-            </motion.div>
-
-            <motion.div
-              className="relative"
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.6 }}
-            >
-              <div className="relative">
-                <motion.div 
-                    className="absolute -inset-4 bg-[#FF6B35] opacity-20 blur-2xl"
-                    animate={{
-                      scale: [1, 1.1, 1],
-                      opacity: [0.2, 0.3, 0.2]
-                    }}
-                    transition={{
-                      duration: 4,
-                      repeat: Infinity,
-                      ease: "easeInOut"
-                    }}
-                  />
-                  <motion.img 
-                    src={childhoodImageUrl}
-                    alt="Young Shayan"
-                    className="relative w-full max-w-md mx-auto border-4 border-[#4ECDC4] shadow-2xl"
-                    style={{
-                      clipPath: 'polygon(0% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%)'
-                    }}
-                    whileHover={{ scale: 1.02 }}
-                    transition={{ duration: 0.3 }}
-                  />
-                  <motion.div 
-                    className="absolute bottom-0 right-0 w-20 h-20 bg-[#FFB800]"
-                    animate={{
-                      rotate: [0, 5, 0, -5, 0],
-                    }}
-                    transition={{
-                      duration: 6,
-                      repeat: Infinity,
-                      ease: "easeInOut"
-                    }}
-                  />
-              </div>
-            </motion.div>
-          </div>
+            <div className="flex items-center justify-center gap-3 text-white/50 font-mono text-xs">
+              <div className="w-2 h-2 bg-[#4ECDC4] rounded-full animate-pulse" />
+              <span>LAHORE → ABU DHABI → NYC → BOSTON</span>
+            </div>
+          </motion.div>
         </div>
       </section>
 
