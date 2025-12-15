@@ -54,12 +54,26 @@ export default function Resume() {
 
         {/* Education */}
         <Section title="EDUCATION" color="#4ECDC4">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-            <div>
-              <h3 className="text-xl font-black text-white">New York University Abu Dhabi</h3>
-              <p className="text-white/70">Bachelor of Science in Computer Science and Mathematics</p>
+          <div className="space-y-6">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div>
+                <h3 className="text-xl font-black text-white">New York University Abu Dhabi</h3>
+                <p className="text-white/70">Bachelor of Science in Computer Science and Mathematics</p>
+              </div>
+              <div className="text-white/50 font-mono text-sm mt-2 md:mt-0">Aug 2021 - May 2025</div>
             </div>
-            <div className="text-white/50 font-mono text-sm mt-2 md:mt-0">Aug 2021 - May 2025</div>
+
+            <div className="border-t border-white/10 pt-4">
+              <div className="text-xs font-mono text-[#4ECDC4] mb-2">GRADUATE_ADMISSIONS_2025:</div>
+              <div className="grid md:grid-cols-2 gap-2 text-sm text-white/60">
+                <div>• Stanford LDT (Accepted)</div>
+                <div>• Harvard LDIT (Accepted)</div>
+                <div>• Columbia Instructional Technology (Accepted)</div>
+                <div>• Vanderbilt MIDTE (Accepted)</div>
+                <div>• NYU Steinhardt LTXD (Accepted)</div>
+                <div>• <span className="text-[#FFB800]">Brown MAT Mathematics (Full Scholarship)</span></div>
+              </div>
+            </div>
           </div>
         </Section>
 

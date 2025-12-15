@@ -164,30 +164,42 @@ export default function Home() {
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8 }}
               >
-                <a 
+                <motion.a 
                   href="mailto:sa6097@nyu.edu"
-                  className="px-8 py-4 bg-[#FF6B35] text-black font-bold rounded-none hover:bg-[#FF6B35]/90 transition-all relative group"
+                  className="px-8 py-4 bg-[#FF6B35] text-black font-bold rounded-none hover:bg-[#FF6B35]/90 transition-all relative group overflow-hidden"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
                   <span className="relative z-10">GET IN TOUCH</span>
-                  <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-20 transition-opacity" />
-                </a>
+                  <motion.div 
+                    className="absolute inset-0 bg-white"
+                    initial={{ x: '-100%' }}
+                    whileHover={{ x: 0 }}
+                    transition={{ duration: 0.3 }}
+                    style={{ opacity: 0.2 }}
+                  />
+                </motion.a>
                 <div className="flex gap-3">
-                  <a 
+                  <motion.a 
                     href="https://linkedin.com/in/shayanahmad7"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 border-2 border-white/20 hover:border-[#FF6B35] flex items-center justify-center transition-all hover:scale-110"
+                    className="w-12 h-12 border-2 border-white/20 hover:border-[#FF6B35] flex items-center justify-center transition-all"
+                    whileHover={{ scale: 1.1, rotate: 5 }}
+                    whileTap={{ scale: 0.9 }}
                   >
                     <Linkedin className="w-5 h-5" />
-                  </a>
-                  <a 
+                  </motion.a>
+                  <motion.a 
                     href="https://github.com/shayanahmad7"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-12 h-12 border-2 border-white/20 hover:border-[#FF6B35] flex items-center justify-center transition-all hover:scale-110"
+                    className="w-12 h-12 border-2 border-white/20 hover:border-[#FF6B35] flex items-center justify-center transition-all"
+                    whileHover={{ scale: 1.1, rotate: -5 }}
+                    whileTap={{ scale: 0.9 }}
                   >
                     <Github className="w-5 h-5" />
-                  </a>
+                  </motion.a>
                 </div>
               </motion.div>
 
@@ -347,10 +359,18 @@ export default function Home() {
               >
                 <Link 
                   to={createPageUrl("About")}
-                  className="inline-block mt-8 px-8 py-4 bg-black text-white font-bold hover:bg-[#FF6B35] transition-all group"
+                  className="inline-block mt-8 px-8 py-4 bg-black text-white font-bold hover:bg-[#FF6B35] transition-all group relative overflow-hidden"
                 >
-                  READ FULL STORY
-                  <ChevronRight className="inline-block ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  <span className="relative z-10 flex items-center">
+                    READ FULL STORY
+                    <ChevronRight className="inline-block ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                  <motion.div
+                    className="absolute inset-0 bg-[#FF6B35]"
+                    initial={{ x: '-100%' }}
+                    whileHover={{ x: 0 }}
+                    transition={{ duration: 0.3 }}
+                  />
                 </Link>
               </motion.div>
             </div>

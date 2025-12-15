@@ -8,31 +8,31 @@ export default function WhyPRG() {
   const alignmentPoints = [
     {
       prgTheme: "AI Literacy & Curricula Research",
-      myWork: "I've spent years teaching students that AI is a tool they can understand and use, not fear. My flipped classroom work uses AI as a transparent learning partner.",
+      myWork: "At NYUAD's Center for Teaching and Learning, I lead workshops training faculty on AI integration and pedagogy adaptation. Through Izteraab.org, I'm building AI literacy among teachers in Islamabad government schools, training them to use KhanMigo and evolve from lecturers into coaches.",
       prgDetails: "Developing materials and interactive tools for K-12 students to learn about AI with focus on constructionism, creativity, ethics/policy, and activism.",
       color: "#4ECDC4"
     },
     {
       prgTheme: "Machine Learning for Educational Technologies",
-      myWork: "My AI-LMS uses modular LLMs as 'mini tutors' for each learning outcome, with an orchestrating agent that tracks mastery and notifies stakeholders. DrawExplain evaluates multimodal input (written + verbal) for deeper understanding.",
+      myWork: "My AI-LMS uses modular LLMs as 'mini tutors' for each learning outcome, with an orchestrating agent that tracks mastery and notifies stakeholders. Math-Confidence.com broke Pre-Algebra into 70+ section-specific mini tutors. DrawExplain evaluates multimodal input (canvas drawings + verbal explanations) for conceptual understanding.",
       prgDetails: "Developing ML techniques, datasets, and systems for educational applications, utilizing LLMs and multimodal models for domain-specific knowledge representations.",
       color: "#FFB800"
     },
     {
       prgTheme: "Child-Robot Interaction / Creativity & Learning",
-      myWork: "My teaching began with children — grades 4-8 at Alma Mater School. I witnessed how the right intervention transforms a child's belief in themselves. This is the foundation of my mission.",
+      myWork: "I want to design a robotic front-end for my AI-LMS—a mastery-aware study buddy that positions itself as a curious peer. When a student solves a problem, the robot might say, 'I'm not sure I understand that step, can you teach it to me?' DrawExplain would evaluate their explanation behind the scenes, and the robot would decide whether to ask follow-ups, encourage, or nudge toward collaboration.",
       prgDetails: "Developing interactive systems that promote learning, cognitive, and emotional growth for young learners.",
       color: "#10B981"
     },
     {
       prgTheme: "Social Intelligence & Multi-party HRI",
-      myWork: "My research on LLMs for collaborative learning at NYU Tandon explored how AI can mediate group discussions. The AI-LMS I'm building facilitates teacher-student-AI triangular interaction.",
+      myWork: "My research on LLMs for collaborative learning at NYU Tandon explored how AI can mediate group discussions. The robotic system I envision would strengthen, not replace, the teacher by surfacing meaningful insights from the LMS about which students need human attention—creating true teacher-student-robot dynamics.",
       prgDetails: "Developing AI systems that understand visual, verbal, vocal behavior in group settings and make decisions on engagement.",
       color: "#EC4899"
     },
     {
       prgTheme: "Responsible AI / Societal Implications",
-      myWork: "My non-profit Izteraab.org is specifically focused on bringing AI-powered education to underserved communities in Pakistan, addressing the equity gap that AI could widen if not deployed responsibly.",
+      myWork: "Izteraab.org brings AI-powered education to government schools in Pakistan. I'm developing a replicable model to scale across Pakistan's public school system, bringing mastery-based, AI-enhanced education to millions currently lacking access. I lead workshops on responsible AI integration at NYUAD.",
       prgDetails: "Technology Design Justice Toolkit — considering who gets to design technology, what social relationships are reproduced by design, and what values we encode.",
       color: "#FF6B35"
     }
@@ -41,18 +41,18 @@ export default function WhyPRG() {
   const proposedResearch = [
     {
       number: "01",
-      title: "Agentic AI Tutoring Systems for Mastery-Based Learning",
-      description: "Develop and evaluate AI agents that orchestrate multiple modular tutors, tracking student mastery across learning outcomes and enabling personalized interventions at scale."
+      title: "Robotic Front-End for AI-LMS: The Mastery-Aware Study Buddy",
+      description: "Design and study a robotic interface for my AI-LMS that positions itself as a curious peer who needs help. When students solve problems, the robot asks 'Can you teach it to me?' — DrawExplain evaluates their explanation, updates the mastery checklist, and the robot decides whether to ask follow-ups, encourage, or suggest collaboration. This transforms the tutor from a tool into a learning partner children genuinely want to teach and grow with."
     },
     {
       number: "02",
-      title: "Multimodal Assessment for Conceptual Understanding",
-      description: "Extend DrawExplain's approach to evaluate not just what students produce (solutions) but how they think (verbal explanations), creating richer assessment models for embodied agents."
+      title: "Early Mathematics Education: Building STEM Confidence from the Start",
+      description: "Focus research on early mathematics (K-5), where childhood gaps often determine whether students later feel capable of pursuing STEM. Combine mastery-based AI tutors with PRG's social robots to build strong foundations and confidence from the start, expanding the global pipeline of learners who can drive future innovation."
     },
     {
       number: "03",
-      title: "Social Robots as Growth Mindset Coaches",
-      description: "Explore how Jibo or similar robots can deliver interventions that foster growth mindset in children, building on PRG's health/wellness work with positive psychology."
+      title: "Responsible Frameworks for AI + Robotics in Classrooms",
+      description: "Develop and test responsible deployment frameworks for using AI and social robots in and beyond classrooms. Study how embodied agents can strengthen (not replace) teachers by surfacing insights about which students need human attention, ensuring technology serves equity rather than deepening divides."
     }
   ];
 
@@ -162,13 +162,13 @@ export default function WhyPRG() {
               <p>
                 The Media Lab's ethos of <span className="text-[#FFB800] font-bold">"demo or die"</span> resonates deeply with me. I don't just theorize — I build, deploy, and iterate with real users.
               </p>
-              
+
               <p>
-                My AI tutors serve <span className="text-[#4ECDC4] font-black">thousands of students</span>. My research runs in real classrooms. I've founded a non-profit while pursuing research.
+                My AI tutors serve <span className="text-[#4ECDC4] font-black">thousands of students</span>. My research runs in real classrooms with 70+ participants. I've co-founded a non-profit, built multiple deployed products, and conducted rigorous research—all while completing my undergraduate degree.
               </p>
 
               <p className="text-xl font-bold">
-                The Lab supports <span className="text-[#FF6B35]">innovative, crazy ideas</span> that don't fit traditional disciplines. My vision of an AI agent orchestrating personalized learning is exactly that — and PRG is the perfect home for it.
+                The Lab supports <span className="text-[#FF6B35]">innovative, crazy ideas</span> that don't fit traditional disciplines. My vision of a robotic study buddy integrated with an agentic AI-LMS is exactly that — and PRG is the only place where embodiment, socially intelligent AI, and rigorous education research come together.
               </p>
             </div>
           </motion.div>
@@ -235,16 +235,19 @@ export default function WhyPRG() {
 
             <div className="bg-black text-white border-4 border-[#4ECDC4] p-8 md:p-12">
               <div className="space-y-6 text-base md:text-lg leading-relaxed text-white/80">
-                <p>
-                  Professor Breazeal's pioneering work on <span className="text-white font-bold">social robots that naturally communicate, collaborate, and support people</span> is exactly the kind of human-centered AI I want to build for education.
-                </p>
-                <p>
-                  Her focus on <span className="text-[#4ECDC4] font-bold">long-term, real-world deployments</span> aligns with my approach — I don't build demos, I deploy to thousands and study impact over time.
-                </p>
-                <p className="text-xl font-bold text-[#FF6B35]">
-                  Under her mentorship, I hope to deepen my understanding of how embodied agents can foster emotional, social, and cognitive growth in learners.
-                </p>
-              </div>
+                  <p>
+                    Professor Breazeal's pioneering work on <span className="text-white font-bold">social robots that naturally communicate, collaborate, and support people</span> is exactly the kind of human-centered AI I want to build for education. Her impact as founder of <span className="text-[#FFB800] font-bold">Jibo</span> demonstrates the power of bringing embodiment to intelligent systems.
+                  </p>
+                  <p>
+                    Her focus on <span className="text-[#4ECDC4] font-bold">long-term, real-world deployments</span> aligns perfectly with my approach — I don't build demos, I deploy to thousands and study impact over time with rigorous research methods.
+                  </p>
+                  <p>
+                    As I've built increasingly sophisticated AI tutors, I've realized something is missing: <span className="text-white font-bold">a presence that feels alive, curious, and socially responsive</span> in a way software alone cannot achieve.
+                  </p>
+                  <p className="text-xl font-bold text-[#FF6B35]">
+                    Under her mentorship, I hope to learn how embodiment can transform a tutor from a tool into a learning partner a child genuinely wants to teach and grow with.
+                  </p>
+                </div>
             </div>
           </motion.div>
         </div>
@@ -274,6 +277,158 @@ export default function WhyPRG() {
         </div>
       </section>
 
+      {/* MIT RAISE */}
+      <section className="py-24 px-6 bg-[#4ECDC4] text-black">
+        <div className="max-w-5xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="text-black/60 font-mono text-sm mb-6">[ MIT_RAISE ]</div>
+            <h2 className="text-4xl md:text-6xl font-black mb-12 leading-tight">
+              RESPONSIBLE AI<br />
+              IN EDUCATION
+            </h2>
+
+            <div className="bg-black text-white p-8 md:p-12 border-4 border-black">
+              <div className="space-y-6 text-lg leading-relaxed">
+                <p>
+                  I'm eager to learn from and contribute to <span className="text-[#4ECDC4] font-bold">MIT RAISE</span>, deepening my understanding of responsible AI education under Professors Breazeal, Hal Abelson, and Eric Klopfer.
+                </p>
+                <p>
+                  While I was unable to attend the inaugural <span className="text-[#FFB800] font-bold">Day of AI Summit in Dubai</span> this year despite being based in the UAE, I hope to help organize and contribute to next year's event, as well as support RAISE initiatives such as classroom pilots and global AI hackathons.
+                </p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Post-Media Lab Vision */}
+      <section className="py-24 px-6 bg-[#0a0a0a]">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-16">
+            <div className="text-[#FF6B35] font-mono text-sm mb-4">[ THE_PLAN ]</div>
+            <h2 className="text-4xl md:text-5xl font-black">
+              AFTER THE<br />
+              <span className="text-[#4ECDC4]">MEDIA LAB</span>
+            </h2>
+          </div>
+
+          <motion.div
+            className="bg-black border-l-4 border-[#FF6B35] p-8 md:p-12"
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+          >
+            <div className="space-y-6 text-white/80 leading-relaxed">
+              <p className="text-xl">
+                I plan to work in <span className="text-white font-bold">leading EdTech and AI labs</span> to deepen my technical and product experience, then shift to my AI LMS venture full-time when I'm ready to scale it responsibly.
+              </p>
+              <p className="text-xl">
+                I envision myself as a <span className="text-[#4ECDC4] font-bold">future leader in the EdTech space</span>, building innovative tools that democratize quality education globally.
+              </p>
+              <p className="text-2xl font-black text-[#FF6B35]">
+                I know technology will evolve—AI and robots will get better—but my core mission will remain constant: build tools and systems that unlock human potential.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Experience Summary */}
+      <section className="py-24 px-6 bg-white text-black">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-16">
+            <div className="text-[#FF6B35] font-mono text-sm mb-4">[ BACKGROUND ]</div>
+            <h2 className="text-4xl md:text-6xl font-black">
+              WHAT I<br />
+              <span className="text-[#4ECDC4]">BRING</span>
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Research */}
+            <motion.div
+              className="bg-black text-white p-8 border-t-4 border-[#4ECDC4]"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+            >
+              <h3 className="text-2xl font-black mb-4 text-[#4ECDC4]">RESEARCH</h3>
+              <ul className="space-y-3 text-sm text-white/70">
+                <li>• Tamayyuz Research Fellow at NYUAD Center for Teaching & Learning</li>
+                <li>• Mixed-methods study on AI-enhanced flipped classrooms (70+ students)</li>
+                <li>• AI Research Assistant with Math Department (32 modular AI tutors)</li>
+                <li>• NYU Tandon: LLMs for collaborative learning (200+ students)</li>
+                <li>• NYUAD eBrain Lab: Deep learning security research</li>
+                <li>• Co-authoring paper for IJETHE</li>
+              </ul>
+            </motion.div>
+
+            {/* Technical */}
+            <motion.div
+              className="bg-black text-white p-8 border-t-4 border-[#FFB800]"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+            >
+              <h3 className="text-2xl font-black mb-4 text-[#FFB800]">TECHNICAL</h3>
+              <ul className="space-y-3 text-sm text-white/70">
+                <li>• <span className="text-white">AI-LMS:</span> Agentic orchestrator + modular tutors</li>
+                <li>• <span className="text-white">Math-Confidence:</span> 70+ AI mini-tutors (Hackathon Finalist)</li>
+                <li>• <span className="text-white">DrawExplain:</span> Canvas + verbal reasoning evaluation</li>
+                <li>• <span className="text-white">AI Networking Tutor:</span> Thousands of monthly users</li>
+                <li>• Skills: LLMs, RAG, LangChain, PyTorch, Next.js, MongoDB</li>
+              </ul>
+            </motion.div>
+
+            {/* Teaching */}
+            <motion.div
+              className="bg-black text-white p-8 border-t-4 border-[#FF6B35]"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+            >
+              <h3 className="text-2xl font-black mb-4 text-[#FF6B35]">TEACHING</h3>
+              <ul className="space-y-3 text-sm text-white/70">
+                <li>• TA, NYU Wagner: "What Really Matters" (25 students)</li>
+                <li>• Math Tutor, NYU Tandon TRIO Scholars</li>
+                <li>• 200+ tutoring sessions (LessonPal, Valdo, Russian Math)</li>
+                <li>• 150 sessions, NYUAD Academic Resource Center</li>
+                <li>• Schoolhouse.world: 100+ students, 50+ sessions</li>
+                <li>• Math Teacher, Alma Mater School (Grades 4-8)</li>
+              </ul>
+            </motion.div>
+          </div>
+
+          {/* Problem-Solving Background */}
+          <motion.div
+            className="mt-12 bg-black text-white p-8 md:p-12 border-2 border-white/20"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.4 }}
+          >
+            <div className="text-[#10B981] font-mono text-xs mb-4">PROBLEM_SOLVING_FOUNDATION:</div>
+            <div className="grid md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="text-xl font-black mb-3">International Math Olympiad 2021</h4>
+                <p className="text-white/70 text-sm">Selected as one of six members of Pakistan National Math Team. Represented my country after years of training. The experience built resilience I now apply to complex educational problems.</p>
+              </div>
+              <div>
+                <h4 className="text-xl font-black mb-3">International Math Competition 2024</h4>
+                <p className="text-white/70 text-sm">Honorable Mention with 32 points (33 for Bronze). NYUAD team member. The true medal was the persistence and problem-solving mindset I bring to research.</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 px-6 bg-black border-t-2 border-white/10">
         <div className="max-w-4xl mx-auto text-center">
@@ -294,6 +449,6 @@ export default function WhyPRG() {
           </div>
         </div>
       </section>
-    </div>
-  );
-}
+      </div>
+      );
+      }

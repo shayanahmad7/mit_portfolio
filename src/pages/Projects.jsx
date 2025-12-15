@@ -17,7 +17,7 @@ export default function Projects() {
 
   const research = [
     {
-      title: "Tamayyuz Research Fellow",
+      title: "Tamayyuz (Excellence) Research Fellow",
       org: "Hilary Ballon Center for Teaching & Learning, NYUAD",
       period: "Sept 2025 - Present",
       description: "Leading mixed-methods research on AI-enhanced flipped classrooms in Precalculus, analyzing outcomes across 50+ students.",
@@ -25,7 +25,7 @@ export default function Projects() {
       highlights: [
         "Co-designed and piloted AI tutoring system with 32 modular tutors",
         "Training faculty on AI integration and assessment redesign",
-        "Co-authoring paper for IJETHE (International Journal of Educational Technology)"
+        "Co-authoring paper for IJETHE (International Journal of Educational Technology in Higher Education)"
       ]
     },
     {
@@ -84,57 +84,61 @@ export default function Projects() {
       title: "AI-LMS",
       subtitle: "Agentic Learning Management System",
       period: "Aug 2025 - Present",
-      description: "An AI-orchestrated LMS where an autonomous agent tracks mastery across learning outcomes, collaborates with modular tutors, and notifies stakeholders proactively.",
+      description: "My research and building experiences have now converged into a single, integrated platform: an agentic Learning Management System that I'm currently building as my startup. This system empowers teachers to easily create custom AI tutors within a unified learning interface that combines notes, videos, and interactive tools—moving far beyond a simple chatbot. The 'agentic' core is an orchestrating AI that monitors student interactions with modular tutors to track their mastery across learning outcomes. It keeps everyone in the loop, notifying teachers which students need personal, human support while giving students encouraging feedback and guidance. This vision is the culmination of my journey, uniting the modularity of Math-Confidence and the rich assessment models of DrawExplain into one scalable, practical system for real classrooms.",
       tags: ["AI Agents", "LangChain", "Next.js", "MongoDB"],
       link: "https://ai-lms-jet.vercel.app/",
       features: [
-        "Chapter-aligned autonomous tutors with side-by-side views",
-        "Multi-modal assessment: canvas + screen recording + verbal reasoning",
-        "Teacher dashboards with mastery tracking and AI insights",
-        "Integration roadmap for Canvas, Blackboard, Moodle, etc."
+        "Chapter-aligned autonomous tutors with side-by-side views (notes/slides, videos, practice)",
+        "Multi-modal assessment: canvas + screen recording + verbal reasoning with AI feedback",
+        "Teacher dashboards with mastery tracking, agent insights, and progress reports",
+        "Integration roadmap for Canvas, Blackboard, Moodle, Google Classroom, Teams, Zoom"
       ]
     },
     {
       title: "Math-Confidence.com",
       subtitle: "Building the Future of Textbooks",
       period: "Feb 2025 - Present",
-      description: "NYUAD+Nokia Slush'd Hackathon Finalist (Top 10/100+ teams). Interactive AI textbook with 70+ section-specific 'mini tutors'.",
+      description: "At the NYUAD+Nokia Slush'd Hackathon, I led a team to ship Math-Confidence.com in approximately 36 hours, placing in the Top 10 of 100+ teams. The key insight we discovered while building was granular modularity. Instead of creating a single AI tutor for the entire book or one per chapter, we built 70+ 'mini AI-tutors'—one for each section of McGraw-Hill's Pre-Algebra DeMYSTiFieD. By breaking learning into specific, small learning outcomes, we created a true mastery-based system where each mini-tutor stays laser-focused on its single job. We implemented mastery checks at each step, ensuring students don't advance until they've truly understood. This core architectural lesson directly informed my current AI-LMS startup, where an AI 'agent' monitors chats from interconnected mini-tutors to track which learning outcomes students have mastered, providing targeted next steps while alerting teachers to who needs human support.",
       tags: ["OpenAI Assistants", "Next.js", "Supabase", "MongoDB"],
       link: "https://math-confidence.com",
       github: "https://github.com/shayanahmad7/math-confidence",
+      videoUrl: "https://www.loom.com/embed/c0632b215df245fb88117c16df780df1",
       features: [
-        "Converted McGraw-Hill's Pre-Algebra DeMYSTiFieD into interactive eBook",
-        "Dynamic quizzes with hints instead of solutions",
-        "Chat history storage for easy revision",
-        "Voice input/output for accessibility"
+        "70+ section-specific mini-tutors for granular mastery-based learning",
+        "Dynamic quizzes with AI-generated hints instead of direct solutions",
+        "Complete chat history storage for easy revision and progress tracking",
+        "Voice input/output for accessibility and multimodal learning"
       ]
     },
     {
       title: "DrawExplain.com",
       subtitle: "Draw it, Explain it, Master it!",
       period: "Sept 2024 - Present",
-      description: "Learning platform where students solve math on canvas while explaining aloud, with AI evaluating both for conceptual understanding.",
+      description: "In my Inquiries into Teaching and Learning class at NYU Steinhardt in Fall 2024, I learned that effective teaching must build on what students already know, rather than treating them as blank slates. Inspired by this principle, I led a team to build DrawExplain.com in my Projects in Programming and Data Science class. Our motto is 'Draw it, Explain it, Master it.' The platform enables students to solve math problems on a digital canvas while explaining their thought processes aloud—our AI then provides detailed feedback on both their written work and verbal reasoning. The goal is to help students actively engage with material, identify gaps in understanding, and master concepts through repeated practice and feedback. Combined with screen recording and Lockdown Browser for anti-cheating measures, I envision it as a rigorous certification tool where students solve exams while explaining each step as though teaching it to someone else. It's inspired by Schoolhouse.world's certification system (https://schoolhouse.world/certification/about), where human reviewers assess screen-recorded certifications accepted by universities like MIT and Brown. Our tool uses AI to scale this approach globally, allowing anyone, anywhere to certify their knowledge to institutions for free.",
       tags: ["GPT-4o", "Whisper", "p5.js", "GCP"],
       link: "https://drawexplain.com",
       github: "https://github.com/shayanahmad7/drawexplain",
+      videoUrl: "https://www.loom.com/embed/eaa97be657c649f0be08b3e26b39f6f5",
+      schoolhouseCertLink: "https://schoolhouse.world/certification/about",
       features: [
-        "Interactive p5.js canvas for mathematical solutions",
-        "OpenAI Whisper for audio transcription of verbal reasoning",
-        "Developing as video certification tool inspired by Schoolhouse.world",
-        "Screen recording and anti-cheating features in progress"
+        "Interactive p5.js canvas for drawing mathematical solutions",
+        "OpenAI Whisper for audio transcription of verbal explanations",
+        "GPT-4o evaluates both written work and spoken reasoning for conceptual understanding",
+        "Screen recording and Lockdown Browser integration for rigorous certification"
       ]
     },
     {
       title: "Abu Dhabi Eats",
       subtitle: "AI-Powered Meal Ordering",
       period: "Feb - May 2024",
-      description: "Full-stack meal ordering app with AI recommendations based on preferences and health goals.",
+      description: "A full-stack meal ordering application built as our Software Engineering course project. The platform combines AI-powered personalization with practical convenience—users input their dietary preferences, health goals, and restrictions, and receive customized meal plans for breakfast, lunch, and dinner. The innovative feature: each recommended meal includes direct ordering links from Deliveroo UAE (similar to DoorDash in the US), so users don't have to search or decide what to order. They simply click the link and the exact meal is added to their cart. This eliminates decision fatigue and makes healthy eating effortless. We used Selenium to scrape and process 10,000+ meal entries from local restaurants, creating a comprehensive database that OpenAI's GPT API uses to generate truly personalized recommendations.",
       tags: ["Node.js", "Express", "Handlebars", "Selenium"],
       github: "https://github.com/shayanahmad7/softwareengineeringproject",
       features: [
-        "Automated data collection for 10,000+ meal entries using Selenium",
-        "OpenAI GPT API for personalized meal plans",
-        "Direct ordering links within meal plans"
+        "Automated Selenium scraping for 10,000+ meal entries from Abu Dhabi restaurants",
+        "OpenAI GPT API generates personalized meal plans based on health goals and preferences",
+        "Direct Deliveroo UAE ordering links—one click from recommendation to cart",
+        "Full-stack implementation with user authentication and preference management"
       ]
     }
   ];
@@ -353,22 +357,52 @@ export default function Projects() {
                           <Github className="w-6 h-6" />
                         </a>
                       )}
-                    </div>
-                  </div>
-
-                  {item.features && (
-                    <div className="mb-6">
-                      <div className="text-white/40 font-mono text-xs mb-3">KEY_FEATURES:</div>
-                      <div className="grid md:grid-cols-2 gap-3">
-                        {item.features.map((feature, j) => (
-                          <div key={j} className="flex items-start gap-2">
-                            <div className="w-1 h-1 bg-[#FFB800] mt-2 flex-shrink-0" />
-                            <p className="text-white/60 text-sm">{feature}</p>
-                          </div>
-                        ))}
                       </div>
-                    </div>
-                  )}
+                      </div>
+
+                      {item.videoUrl && (
+                        <div className="mb-6">
+                          <div className="text-white/40 font-mono text-xs mb-3">DEMO_VIDEO:</div>
+                          <div className="relative w-full" style={{ paddingTop: '56.25%' }}>
+                            <iframe
+                              src={item.videoUrl}
+                              className="absolute top-0 left-0 w-full h-full border-2 border-white/10"
+                              frameBorder="0"
+                              allowFullScreen
+                              webkitallowfullscreen="true"
+                              mozallowfullscreen="true"
+                            />
+                          </div>
+                        </div>
+                      )}
+
+                      {item.schoolhouseCertLink && (
+                        <div className="mb-6">
+                          <a 
+                            href={item.schoolhouseCertLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-2 text-[#4ECDC4] hover:text-white transition-colors text-sm font-mono"
+                          >
+                            <ExternalLink className="w-4 h-4" />
+                            SCHOOLHOUSE.WORLD_CERTIFICATION_SYSTEM
+                          </a>
+                        </div>
+                      )}
+
+                      {item.features && (
+                        <div className="mb-6">
+                          <div className="text-white/40 font-mono text-xs mb-3">KEY_FEATURES:</div>
+                          <div className="grid md:grid-cols-2 gap-3">
+                            {item.features.map((feature, j) => (
+                              <div key={j} className="flex items-start gap-2">
+                                <div className="w-1 h-1 bg-[#FFB800] mt-2 flex-shrink-0" />
+                                <p className="text-white/60 text-sm">{feature}</p>
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
 
                   <div className="flex flex-wrap gap-2">
                     {item.tags.map((tag, j) => (
