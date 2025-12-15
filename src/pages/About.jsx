@@ -4,7 +4,7 @@ import { ArrowLeft, ChevronRight, ExternalLink } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '@/utils';
 
-const profileImageUrl = "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/user_68ece077245b833bff0195c7/aba735dd1_Shayan_Linkedin_Picture.jpg";
+const childhoodImageUrl = "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6936af0265452204c9f22c57/600cf99aa_IMG_8062.jpg";
 
 export default function About() {
   const timeline = [
@@ -83,6 +83,20 @@ export default function About() {
       title: "International Math Competition",
       description: "Honorable Mention at IMC 2024 with 32 points (33 for Bronze). Just one point shy, but the true medal was the persistence I'd built since IMO 2021. Applied that problem-solving mindset to educational challenges.",
       highlight: "Honorable Mention",
+      color: "#FFB800"
+    },
+    {
+      year: "2024",
+      title: "AI in Education Research",
+      description: "Started working with Professor Dania Zantout on AI-enhanced flipped classroom research. Together we designed an experimental framework for flipped Precalculus using 32 curriculum-aligned modular AI tutors for outside-class support. Successfully ran pilot in Summer 2024 NYUAD Precalculus course, laying groundwork for full-scale study.",
+      highlight: "Research Begins",
+      color: "#EC4899"
+    },
+    {
+      year: "2024",
+      title: "NYU Tandon Research",
+      description: "AI Research Assistant building Discord chatbot to support 200+ EG 1004 engineering students with project guidance. Used LLMs to mediate team discussions and clarify misunderstandings. Processed 10,000+ student messages for training. Research preparing for IEEE and ASEE submissions.",
+      highlight: "LLMs for Collaboration",
       color: "#FFB800"
     },
     {
@@ -219,8 +233,8 @@ export default function About() {
                     }}
                   />
                   <motion.img 
-                    src={profileImageUrl}
-                    alt="Shayan Ahmad"
+                    src={childhoodImageUrl}
+                    alt="Young Shayan"
                     className="relative w-full max-w-md mx-auto border-4 border-[#4ECDC4] shadow-2xl"
                     style={{
                       clipPath: 'polygon(0% 0%, 100% 0%, 100% 90%, 90% 100%, 0% 100%)'
@@ -255,7 +269,7 @@ export default function About() {
               viewport={{ once: true }}
             >
               <img 
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6936af0265452204c9f22c57/600cf99aa_IMG_8062.jpg"
+                src={childhoodImageUrl}
                 alt="Young Shayan"
                 className="w-full border-4 border-[#FF6B35] shadow-xl"
               />
@@ -495,7 +509,7 @@ export default function About() {
               <div className="text-[#FF6B35] font-mono text-xs mb-3">PROOF_OF_BIG_SMILE:</div>
               <div className="aspect-[9/16] max-w-[300px] mx-auto">
                 <iframe
-                  src="https://www.instagram.com/p/DBn-8HCN1hd/embed"
+                  src="https://www.instagram.com/p/DD4UB99t1Pn/embed"
                   className="w-full h-full border-0"
                   frameBorder="0"
                   scrolling="no"
@@ -525,20 +539,23 @@ export default function About() {
           </div>
 
           <motion.div 
-            className="mt-8 text-center"
+            className="mt-12 text-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
             <a 
-              href="https://instagram.com/shayanahmadk_"
+              href="https://www.instagram.com/shayanahmadk_"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-[#4ECDC4] hover:text-white transition-colors font-mono text-sm"
+              className="inline-block px-10 py-4 bg-[#FF6B35] text-black font-black text-lg hover:bg-white transition-all"
             >
-              <ExternalLink className="w-4 h-4" />
-              @shayanahmadk_ // EdTech insights + weekly fit checks
+              <ExternalLink className="inline-block w-5 h-5 mr-3" />
+              FOLLOW @shayanahmadk_
             </a>
+            <p className="mt-4 text-white/60 font-mono text-sm">
+              EdTech insights • Mastery learning • Weekly fit checks
+            </p>
           </motion.div>
         </div>
       </section>
