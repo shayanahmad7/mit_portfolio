@@ -98,7 +98,7 @@ export default function Resume() {
                 title: "Senior Capstone: AI Educational Assistant",
                 org: "NYUAD",
                 period: "Apr 2024 - May 2025",
-                points: ["Deployed to 100,000+ monthly users", "Worked with Professors Jim Kurose and Keith Ross"]
+                points: ["Deployed to thousands of monthly users", "Worked with Professors Jim Kurose and Keith Ross"]
               }
             ].map((item, i) => (
               <div key={i}>

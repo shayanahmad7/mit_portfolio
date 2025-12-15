@@ -57,8 +57,8 @@ export default function Home() {
     },
     {
       title: "AI Networking Tutor",
-      subtitle: "100K+ Monthly Users",
-      description: "Senior capstone with Professors Jim Kurose and Keith Ross. Deployed AI tutors to 100,000+ monthly users on the authors' textbook website.",
+      subtitle: "Thousands of Monthly Users",
+      description: "Senior capstone with Professors Jim Kurose and Keith Ross. Deployed AI tutors to thousands of monthly users on the authors' textbook website.",
       tags: ["RAG", "Interactive Learning", "Scale"],
       link: "https://gaia.cs.umass.edu/kurose_ross/interactive/",
       number: "04",
@@ -301,7 +301,7 @@ export default function Home() {
                   FROM TEACHING<br />
                   <span className="text-[#FF6B35]">HANA</span><br />
                   TO BUILDING AI<br />
-                  FOR MILLIONS
+                  FOR THOUSANDS
                 </h3>
               </motion.div>
 
@@ -331,7 +331,7 @@ export default function Home() {
                 >
                   <div className="text-sm font-mono text-[#4ECDC4]">[ 2020-25 // SCALING ]</div>
                   <p className="text-lg leading-relaxed text-black/80">
-                    As a founding tutor at <span className="font-bold">Schoolhouse.world</span>, I shared ideas with Sal Khan himself. At NYU Abu Dhabi, I merged education with AI, building tools that reached <span className="font-bold text-[#FF6B35]">100,000+ learners</span>.
+                    As a founding tutor at <span className="font-bold">Schoolhouse.world</span>, I shared ideas with Sal Khan himself. At NYU Abu Dhabi, I merged education with AI, building tools that reached <span className="font-bold text-[#FF6B35]">thousands of learners</span>.
                   </p>
                   <p className="text-lg leading-relaxed text-black/80">
                     I call this restless curiosity <span className="italic font-medium">Izteraab</span> — now the name of my education non-profit in Pakistan.
@@ -560,30 +560,9 @@ export default function Home() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
             >
-              <div className="bg-black border-4 border-[#4ECDC4] p-8 relative">
-                <div className="absolute -top-4 -right-4 w-32 h-32 bg-[#FF6B35]" style={{ clipPath: 'polygon(100% 0, 100% 100%, 0 100%)' }} />
-                
-                <div className="space-y-6 relative z-10">
-                  <div>
-                    <div className="text-5xl font-black text-[#4ECDC4] mb-2">5+</div>
-                    <div className="text-white/60 text-sm">Research Projects</div>
-                  </div>
-                  <div className="h-px bg-white/10" />
-                  <div>
-                    <div className="text-5xl font-black text-[#FF6B35] mb-2">100K+</div>
-                    <div className="text-white/60 text-sm">Users Reached</div>
-                  </div>
-                  <div className="h-px bg-white/10" />
-                  <div>
-                    <div className="text-5xl font-black text-[#FFB800] mb-2">4</div>
-                    <div className="text-white/60 text-sm">Years of Teaching</div>
-                  </div>
-                </div>
-              </div>
-
               <Link 
                 to={createPageUrl("WhyPRG")}
-                className="block mt-6 px-8 py-4 bg-black border-2 border-black hover:border-[#FF6B35] text-white font-bold text-center transition-all group"
+                className="block px-8 py-4 bg-black border-2 border-black hover:border-[#FF6B35] text-white font-bold text-center transition-all group"
               >
                 FULL RESEARCH FIT
                 <ChevronRight className="inline-block ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />

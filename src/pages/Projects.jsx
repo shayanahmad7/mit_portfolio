@@ -47,7 +47,7 @@ export default function Projects() {
       description: "Collaborated with Professors Jim Kurose and Keith Ross on AI tutors for Computer Networking: A Top-Down Approach textbook.",
       tags: ["RAG", "OpenAI", "Scale"],
       highlights: [
-        "Deployed to 100,000+ monthly users on authors' website",
+        "Deployed to thousands of monthly users on authors' website",
         "Chapter-specific bots + interactive problem-solver companion",
         "User/teacher profiles for progress tracking and research data collection"
       ],
