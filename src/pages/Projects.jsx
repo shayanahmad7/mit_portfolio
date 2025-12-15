@@ -17,7 +17,7 @@ export default function Projects() {
 
   const research = [
     {
-      title: "Tamayyuz Research Fellow",
+      title: "Tamayyuz (Excellence) Research Fellow",
       org: "Hilary Ballon Center for Teaching & Learning, NYUAD",
       period: "Sept 2025 - Present",
       description: "Leading mixed-methods research on AI-enhanced flipped classrooms in Precalculus, analyzing outcomes across 50+ students.",
@@ -25,7 +25,7 @@ export default function Projects() {
       highlights: [
         "Co-designed and piloted AI tutoring system with 32 modular tutors",
         "Training faculty on AI integration and assessment redesign",
-        "Co-authoring paper for IJETHE (International Journal of Educational Technology)"
+        "Co-authoring paper for IJETHE (International Journal of Educational Technology in Higher Education)"
       ]
     },
     {
