@@ -12,7 +12,7 @@ export default function Projects() {
     { id: 'technical', label: 'TECHNICAL' },
     { id: 'teaching', label: 'TEACHING' },
     { id: 'honors', label: 'HONORS' },
-    { id: 'volunteer', label: 'VOLUNTEER' }
+    { id: 'volunteer', label: 'VOLUNTEER & COMMUNITY' }
   ];
 
   const research = [
@@ -196,12 +196,6 @@ export default function Projects() {
       period: "Aug 2024"
     },
     {
-      title: "President, NYUAD Mathematics Society",
-      award: "Student Leadership",
-      description: "Led NYUAD's Mathematics Society, managing recruitment, organizing events and workshops, running the peer tutoring center, and coaching students for the International Mathematics Competition. Built a community where problem-solving was celebrated.",
-      period: "Jun 2022 - Jun 2023"
-    },
-    {
       title: "Pakistan Team, International Mathematical Olympiad 2021",
       award: "National Team Member",
       description: "Selected as 1 of 6 participants nationwide after multi-round qualifiers and national camps to represent Pakistan at the International Mathematical Olympiad, widely regarded as the world's most prestigious mathematics competition, with participants from 100+ countries.",
@@ -220,6 +214,17 @@ export default function Projects() {
         "Partnering with Khan Academy's Khanmigo for personalized learning",
         "Training teachers to act as coaches in AI-enhanced environments",
         "Building partnerships with government schools and education NGOs"
+      ]
+    },
+    {
+      title: "President, NYUAD Mathematics Society",
+      role: "Student Leadership",
+      period: "Jun 2022 - Jun 2023",
+      description: "Led NYUAD's Mathematics Society, managing recruitment, organizing events and workshops, running the peer tutoring center, and coaching students for the International Mathematics Competition.",
+      highlights: [
+        "Built a community where problem-solving was celebrated",
+        "Organized workshops and mathematical events for 2,100+ student campus",
+        "Coached students for International Mathematics Competition"
       ]
     },
     {
