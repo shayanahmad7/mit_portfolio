@@ -32,7 +32,7 @@ export default function About() {
     {
       year: "2024",
       title: "The AI Pivot",
-      description: "Realized AI was the 'magic wand' I'd been searching for. Built AI tutors for the Computer Networking textbook with Professors Keith Ross and Jim Kurose. Deployed to 100,000+ monthly users.",
+      description: "Realized AI was the 'magic wand' I'd been searching for. Built AI tutors for the Computer Networking textbook with Professors Keith Ross and Jim Kurose. Deployed to thousands of monthly users.",
       highlight: "Senior Capstone Project",
       color: "#10B981"
     },

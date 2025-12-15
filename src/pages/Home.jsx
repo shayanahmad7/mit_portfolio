@@ -57,8 +57,8 @@ export default function Home() {
     },
     {
       title: "AI Networking Tutor",
-      subtitle: "100K+ Monthly Users",
-      description: "Senior capstone with Professors Jim Kurose and Keith Ross. Deployed AI tutors to 100,000+ monthly users on the authors' textbook website.",
+      subtitle: "Thousands of Monthly Users",
+      description: "Senior capstone with Professors Jim Kurose and Keith Ross. Deployed AI tutors to thousands of monthly users on the authors' textbook website.",
       tags: ["RAG", "Interactive Learning", "Scale"],
       link: "https://gaia.cs.umass.edu/kurose_ross/interactive/",
       number: "04",
@@ -570,7 +570,7 @@ export default function Home() {
                   </div>
                   <div className="h-px bg-white/10" />
                   <div>
-                    <div className="text-5xl font-black text-[#FF6B35] mb-2">100K+</div>
+                    <div className="text-5xl font-black text-[#FF6B35] mb-2">1000s</div>
                     <div className="text-white/60 text-sm">Users Reached</div>
                   </div>
                   <div className="h-px bg-white/10" />
