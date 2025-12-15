@@ -219,12 +219,6 @@ export default function Home() {
 
                 {/* Accent corner */}
                 <div className="absolute bottom-0 right-0 w-24 h-24 bg-[#4ECDC4]" />
-                
-                {/* Stats overlay */}
-                <div className="absolute -bottom-6 -left-6 bg-black border-2 border-[#FF6B35] p-4">
-                  <div className="text-3xl font-black text-[#FF6B35]">100K+</div>
-                  <div className="text-xs text-white/60 font-mono">USERS REACHED</div>
-                </div>
               </div>
             </motion.div>
           </div>
