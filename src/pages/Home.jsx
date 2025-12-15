@@ -120,7 +120,7 @@ export default function Home() {
         />
         
         <div className="max-w-7xl mx-auto px-6 py-20 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="flex flex-col lg:grid lg:grid-cols-2 gap-16 items-center">
             {/* Left: Text */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
@@ -216,15 +216,6 @@ export default function Home() {
                     clipPath: 'polygon(0% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%)'
                   }}
                 />
-
-                {/* Accent corner */}
-                <div className="absolute bottom-0 right-0 w-24 h-24 bg-[#4ECDC4]" />
-                
-                {/* Stats overlay */}
-                <div className="absolute -bottom-6 -left-6 bg-black border-2 border-[#FF6B35] p-4">
-                  <div className="text-3xl font-black text-[#FF6B35]">100K+</div>
-                  <div className="text-xs text-white/60 font-mono">USERS REACHED</div>
-                </div>
               </div>
             </motion.div>
           </div>
@@ -287,12 +278,12 @@ export default function Home() {
           <div className="grid lg:grid-cols-12 gap-12">
             {/* Vertical Title */}
             <motion.div 
-              className="lg:col-span-2 flex lg:flex-col items-center lg:items-start"
+              className="lg:col-span-2 flex items-start justify-start lg:justify-center"
               initial={{ opacity: 0, x: -30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-6xl md:text-8xl font-black opacity-5 lg:writing-mode-vertical lg:text-orientation-mixed whitespace-nowrap">
+              <h2 className="text-4xl md:text-6xl lg:text-8xl font-black text-black/10 lg:[writing-mode:vertical-lr] whitespace-nowrap">
                 THE STORY
               </h2>
             </motion.div>
