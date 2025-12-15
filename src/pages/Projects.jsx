@@ -12,7 +12,7 @@ export default function Projects() {
     { id: 'technical', label: 'TECHNICAL' },
     { id: 'teaching', label: 'TEACHING' },
     { id: 'honors', label: 'HONORS' },
-    { id: 'volunteer', label: 'VOLUNTEER' }
+    { id: 'volunteer', label: 'VOLUNTEER & COMMUNITY' }
   ];
 
   const research = [
@@ -20,38 +20,48 @@ export default function Projects() {
       title: "Tamayyuz (Excellence) Research Fellow",
       org: "Hilary Ballon Center for Teaching & Learning, NYUAD",
       period: "Sept 2025 - Present",
-      description: "Leading mixed-methods research on AI-enhanced flipped classrooms in Precalculus, analyzing outcomes across 50+ students.",
-      tags: ["AI in Education", "Mixed Methods", "Flipped Classrooms"],
+      description: "As a Tamayyuz Research Fellow, I'm extending my work from Summer 2025 into a full-scale mixed-methods study. Building on the pilot's success, I'm now designing a rigorous controlled experiment for Spring 2026: one section will follow the traditional lecture-based model, while another implements our AI-enhanced flipped classroom framework (AIIALP). We'll measure improvements in learning outcomes, student perceptions, and engagement patterns across 70+ students. I'm developing instructor dashboards within NYUAD's OpenWebUI platform (PilotGenAI) that track mastery of learning outcomes in real-time by analyzing student interactions with our 32 section-specific AI tutors. These dashboards surface insights about which concepts students struggle with, enabling just-in-time teaching interventions. We're preparing a paper for IJETHE (International Journal of Educational Technology in Higher Education) on our findings. Beyond research, I lead workshops training NYUAD faculty on AI literacy, ethical integration, and pedagogy redesign—helping instructors rethink assessment strategies and leverage AI responsibly. I also manage a team of student research assistants, coordinating data collection, analysis, and literature reviews to support our ongoing studies.",
+      tags: ["AI in Education", "Mixed Methods", "Flipped Classrooms", "OpenWebUI", "Faculty Training"],
       highlights: [
-        "Co-designed and piloted AI tutoring system with 32 modular tutors",
-        "Training faculty on AI integration and assessment redesign",
-        "Co-authoring paper for IJETHE (International Journal of Educational Technology in Higher Education)"
-      ]
+        "Designing controlled study for Spring 2026 with experimental and control groups",
+        "Building instructor dashboards tracking mastery of learning outcomes via OpenWebUI/PilotGenAI",
+        "Leading AI literacy workshops and training faculty on ethical integration",
+        "Managing team of student research assistants",
+        "Co-authoring paper for IJETHE on AI-enhanced flipped classrooms"
+      ],
+      imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6936af0265452204c9f22c57/5de9356e3_image.png"
     },
     {
       title: "AI in Education Research Assistant",
       org: "Math Department, NYU Abu Dhabi",
       period: "Sept 2024 - Aug 2025",
-      description: "Built and deployed 32 section-specific AI tutors using open-source LLMs via OpenWebUI on NYUAD's secure infrastructure.",
-      tags: ["LLMs", "OpenWebUI", "Privacy"],
+      description: "Working with Professor Dania Zantout, I built the foundational research framework that my Tamayyuz fellowship now extends. We co-designed an experimental AI-enhanced flipped classroom model called AIIALP (AI-Infused Active Learning Pedagogy) that fuses three research-backed strategies: flipped/hybrid learning, SCALE-UP collaborative classrooms, and just-in-time teaching. The innovation: 32 section-specific 'mini AI tutors'—one for each learning outcome in Precalculus—deployed via OpenWebUI on NYUAD's secure servers to preserve student privacy while enabling real-time instructor oversight. Students engage with these tutors before class for personalized preparation, then class time becomes purely human-led collaborative problem-solving with no digital devices allowed. We piloted this framework in Summer 2025 with 50+ students, replacing traditional homework with this AI-supported daily learning cycle. The key architectural insight: granular modularity. Each mini-tutor stays laser-focused on a single learning outcome, mirroring the approach I discovered while building Math-Confidence.com at the Nokia Hackathon. This work laid the groundwork for the controlled study I'm now designing as a Tamayyuz Fellow for Spring 2026, where we'll rigorously measure learning gains against a traditional control group.",
+      tags: ["LLMs", "OpenWebUI", "Privacy", "Flipped Classrooms", "Modular AI"],
       highlights: [
-        "Replaced traditional homework with in-class collaboration + modular AI support",
-        "Preserved student privacy while enabling real-time instructor oversight",
-        "Designed experimental framework for controlled study"
-      ]
+        "Co-designed AIIALP framework fusing flipped learning, SCALE-UP, and just-in-time teaching",
+        "Built 32 section-specific mini AI tutors—one per learning outcome—for granular mastery tracking",
+        "Piloted with 50+ students in Summer 2025 Precalculus course",
+        "Deployed on NYUAD's secure OpenWebUI infrastructure to preserve FERPA compliance",
+        "Designed daily learning cycle: AI-supported prep → human-led class → AI-supported review"
+      ],
+      imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6936af0265452204c9f22c57/29bed4128_image.png"
     },
     {
       title: "Senior Capstone: AI Educational Assistant",
       org: "NYU Abu Dhabi",
       period: "Apr 2024 - May 2025",
-      description: "Collaborated with Professors Jim Kurose and Keith Ross on AI tutors for Computer Networking: A Top-Down Approach textbook.",
-      tags: ["RAG", "OpenAI", "Scale"],
+      description: "My capstone project became a profound exploration of the future of textbooks with Professors Jim Kurose (UMass Amherst) and Keith Ross (NYU). Their Computer Networking: A Top-Down Approach is used worldwide, and they envisioned AI as the next evolution—not replacing the book, but making it come alive. We built an ecosystem of AI tutors deployed on the authors' official website, serving thousands of monthly users globally. The architecture includes chapter-specific tutors that use RAG (Retrieval Augmented Generation) to stay grounded in the textbook content, plus an interactive problem-solving companion that guides students through exercises step-by-step without giving away answers. We collected research data on how students learn with AI support. This project crystallized my belief that the future of education isn't textbooks vs. AI—it's textbooks augmented by intelligent, always-available companions that adapt to each learner. Professors Kurose and Ross didn't just want a demo; they wanted a production system that would genuinely help students worldwide. Building something real for thousands of users shaped how I approach EdTech: deploy, test with real users, and iterate based on evidence. This work directly inspired the modular architecture I later used in Math-Confidence and my current AI-LMS.",
+      tags: ["RAG", "OpenAI", "Scale", "Textbook Innovation"],
       highlights: [
-        "Deployed to thousands of monthly users on authors' website",
-        "Chapter-specific bots + interactive problem-solver companion",
-        "User/teacher profiles for progress tracking and research data collection"
+        "Deployed to thousands of monthly users on authors' official textbook website",
+        "Chapter-specific AI tutors using RAG to stay grounded in textbook content",
+        "Interactive problem-solver companion guiding students without revealing answers",
+        "User and teacher dashboards for progress tracking and research data collection",
+        "Pioneered vision of AI-augmented textbooks with world-renowned CS educators"
       ],
-      link: "https://gaia.cs.umass.edu/kurose_ross/interactive/"
+      link: "https://computer-networking-assistant.vercel.app/",
+      github: "https://github.com/shayanahmad7/computer-networking-assistant",
+      imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6936af0265452204c9f22c57/0b212addc_image.png"
     },
     {
       title: "AI Research Assistant",
@@ -74,8 +84,7 @@ export default function Projects() {
       highlights: [
         "Created 'Backdoor-Toolbox' on GitHub for attack execution",
         "Built library of backdoor defenses with benchmark testing"
-      ],
-      github: "https://github.com/shayanahmad7/backdoor-toolbox"
+      ]
     }
   ];
 
@@ -178,22 +187,28 @@ export default function Projects() {
 
   const honors = [
     {
-      title: "International Math Competition 2024",
+      title: "Tamayyuz (Excellence) Research Fellowship",
+      award: "NYU Abu Dhabi",
+      description: "Awarded NYUAD's competitive Tamayyuz (Excellence) Research Fellowship for graduating seniors that builds advanced research skills through full-time faculty supervised work and structured mentorship, preparing fellows for graduate study while contributing to the growing research landscape in the UAE.",
+      period: "Apr 2025"
+    },
+    {
+      title: "Graduate Admissions to Top EdTech Programs",
+      award: "6 Selective Programs",
+      description: "Admitted to Stanford LDT, Harvard LDIT, Columbia Instructional Technology & Media, NYU Steinhardt Learning & Teaching with Educational Technology, and Vanderbilt International Education Policy & Management with Data Science. Awarded full-ride scholarship to Brown's MAT in Mathematics, affirming aptitude for graduate study and research in education and AI-enhanced learning.",
+      period: "Apr 2025"
+    },
+    {
+      title: "International Mathematics Competition 2024",
       award: "Honorable Mention",
-      description: "NYU Abu Dhabi team member. Scored 32 points (33 for Bronze medal).",
+      description: "Selected as 1 of 5 students to represent NYU Abu Dhabi at the International Mathematics Competition in Bulgaria, a top global university math contest with participants from 200+ institutions from 50+ countries. Earned an Honorable Mention scoring 32 points, one below the Bronze medal cutoff.",
       period: "Aug 2024"
     },
     {
-      title: "International Math Olympiad 2021",
+      title: "Pakistan Team, International Mathematical Olympiad 2021",
       award: "National Team Member",
-      description: "Selected as one of six members of Pakistan National Math Team.",
+      description: "Selected as 1 of 6 participants nationwide after multi-round qualifiers and national camps to represent Pakistan at the International Mathematical Olympiad, widely regarded as the world's most prestigious mathematics competition, with participants from 100+ countries.",
       period: "Jul 2021"
-    },
-    {
-      title: "President, NYUAD Mathematics Society",
-      award: "Leadership Role",
-      description: "Managed recruitment, events, peer tutoring center, and IMC coaching.",
-      period: "Jun 2022 - Jun 2023"
     }
   ];
 
@@ -208,6 +223,17 @@ export default function Projects() {
         "Partnering with Khan Academy's Khanmigo for personalized learning",
         "Training teachers to act as coaches in AI-enhanced environments",
         "Building partnerships with government schools and education NGOs"
+      ]
+    },
+    {
+      title: "President, NYUAD Mathematics Society",
+      role: "Student Leadership",
+      period: "Jun 2022 - Jun 2023",
+      description: "Led NYUAD's Mathematics Society, managing recruitment, organizing events and workshops, running the peer tutoring center, and coaching students for the International Mathematics Competition.",
+      highlights: [
+        "Built a community where problem-solving was celebrated",
+        "Organized workshops and mathematical events for 2,100+ student campus",
+        "Coached students for International Mathematics Competition"
       ]
     },
     {
@@ -227,11 +253,16 @@ export default function Projects() {
       role: "Founder",
       period: "Apr 2020 - Jan 2022",
       description: "Built tutoring business via YouTube/Instagram teaching SAT Math and Olympiad Geometry to 100+ students across Pakistan.",
-      link: "https://instagram.com/preplion",
+      links: [
+        { label: "YouTube Channel", url: "https://www.youtube.com/channel/UC_P7CWHQU4i8XImSoBLz1SA" },
+        { label: "Instagram Page", url: "https://www.instagram.com/preplion" },
+        { label: "Olympiad Geometry Course", url: "https://docs.google.com/document/d/1iSQJepuxgQXdVlQn91JACVdr33qQ9L43bzEKtb6_G2U/edit?usp=sharing" },
+        { label: "SAT Prep Course", url: "https://docs.google.com/document/d/1dfLF3n7dwO4c5R_YUtfCw8TjEJRh8VLhTiTxCBX1FcU/edit?usp=sharing" }
+      ],
       highlights: [
-        "Led group classes of 20+ students",
-        "Free Olympiad training; several students advanced to Pakistan IMO team",
-        "Created educational content on YouTube channel"
+        "Created educational videos on SAT Math and Olympiad Geometry for YouTube and Instagram",
+        "Managed and taught multiple classes of 20+ students, providing tailored instruction",
+        "Conducted free Olympiad Geometry training for aspiring IMO participants; many joined Pakistan national team"
       ]
     }
   ];
@@ -260,6 +291,18 @@ export default function Projects() {
                       {item.title}
                     </h3>
                     <p className="text-[#FF6B35] font-mono text-sm mb-4">{item.org}</p>
+
+                    {item.imageUrl && (
+                      <div className="mb-6">
+                        <div className="text-white/40 font-mono text-xs mb-2">FRAMEWORK_VISUAL:</div>
+                        <img 
+                          src={item.imageUrl} 
+                          alt="Daily Learning Cycle" 
+                          className="w-full max-w-md border-2 border-white/10 rounded"
+                        />
+                      </div>
+                    )}
+
                     <p className="text-white/70 leading-relaxed mb-6">
                       {item.description}
                     </p>
@@ -518,6 +561,22 @@ export default function Projects() {
                       >
                         <ExternalLink className="w-6 h-6" />
                       </a>
+                    )}
+                    {item.links && (
+                      <div className="flex flex-wrap gap-2 mt-4">
+                        {item.links.map((link, idx) => (
+                          <a
+                            key={idx}
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-[#4ECDC4]/10 border border-[#4ECDC4]/30 hover:bg-[#4ECDC4] hover:text-black text-white text-xs font-mono transition-all"
+                          >
+                            <ExternalLink className="w-3 h-3" />
+                            {link.label}
+                          </a>
+                        ))}
+                      </div>
                     )}
                   </div>
                 </div>
