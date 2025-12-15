@@ -20,7 +20,7 @@ export default function Projects() {
       title: "Tamayyuz (Excellence) Research Fellow",
       org: "Hilary Ballon Center for Teaching & Learning, NYUAD",
       period: "Sept 2025 - Present",
-      description: "As a Tamayyuz (Excellence) Research Fellow—NYUAD's competitive post-graduation fellowship for advanced research—I'm extending my work from Summer 2025 into a full-scale mixed-methods study. Building on the pilot's success, I'm now designing a rigorous controlled experiment for Spring 2026: one section will follow the traditional lecture-based model, while another implements our AI-enhanced flipped classroom framework (AIIALP). We'll measure improvements in learning outcomes, student perceptions, and engagement patterns across 70+ students. I'm developing instructor dashboards within NYUAD's OpenWebUI platform (PilotGenAI) that track mastery of learning outcomes in real-time by analyzing student interactions with our 32 section-specific AI tutors. These dashboards surface insights about which concepts students struggle with, enabling just-in-time teaching interventions. Beyond research, I lead workshops training NYUAD faculty on AI literacy, ethical integration, and pedagogy redesign, while managing a team of student assistants. This fellowship represents the culmination of my journey—from teaching Hana in a classroom to building scalable AI systems that preserve the human element while democratizing personalized learning. We're preparing a paper for IJETHE (International Journal of Educational Technology in Higher Education) on our findings.",
+      description: "As a Tamayyuz Research Fellow, I'm extending my work from Summer 2025 into a full-scale mixed-methods study. Building on the pilot's success, I'm now designing a rigorous controlled experiment for Spring 2026: one section will follow the traditional lecture-based model, while another implements our AI-enhanced flipped classroom framework (AIIALP). We'll measure improvements in learning outcomes, student perceptions, and engagement patterns across 70+ students. I'm developing instructor dashboards within NYUAD's OpenWebUI platform (PilotGenAI) that track mastery of learning outcomes in real-time by analyzing student interactions with our 32 section-specific AI tutors. These dashboards surface insights about which concepts students struggle with, enabling just-in-time teaching interventions. Beyond research, I lead workshops training NYUAD faculty on AI literacy, ethical integration, and pedagogy redesign, while managing a team of student assistants. We're preparing a paper for IJETHE (International Journal of Educational Technology in Higher Education) on our findings.",
       tags: ["AI in Education", "Mixed Methods", "Flipped Classrooms", "OpenWebUI", "Faculty Training"],
       highlights: [
         "Designing controlled study for Spring 2026 with experimental and control groups",
@@ -29,7 +29,7 @@ export default function Projects() {
         "Managing team of student research assistants",
         "Co-authoring paper for IJETHE on AI-enhanced flipped classrooms"
       ],
-      imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6936af0265452204c9f22c57/29bed4128_image.png"
+      imageUrl: "https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/6936af0265452204c9f22c57/5de9356e3_image.png"
     },
     {
       title: "AI in Education Research Assistant",
